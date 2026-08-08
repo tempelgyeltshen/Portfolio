@@ -1,5 +1,6 @@
 import React from 'react';
 import { Music, Mic, Wine, Users } from 'lucide-react';
+import { ASSETS } from '../data/assets';
 
 export const HitokaraSection: React.FC = () => {
   const features = [
@@ -18,12 +19,9 @@ export const HitokaraSection: React.FC = () => {
           {/* LEFT: Lounge Atmosphere Image */}
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-sm overflow-hidden border border-[#B08B46]/30 bg-white shadow-xl">
-              <div className="aspect-[16/10] overflow-hidden bg-[#FAF7F2]">
-                <img
-                  src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=85"
-                  alt="Hitokara Lounge & Bar Thimphu"
-                  className="w-full h-full object-cover filter brightness-100 contrast-105"
-                />
+              <div className="grid grid-cols-2 aspect-[16/10] overflow-hidden bg-[#FAF7F2]">
+                <img src={ASSETS.hitokara1} alt="Karaoke at Hitokara Lounge & Bar" className="w-full h-full object-cover" />
+                <img src={ASSETS.hitokara2} alt="Hitokara Lounge & Bar karaoke experience" className="w-full h-full object-cover" />
               </div>
 
               <div className="p-6 bg-white border-t border-[#B08B46]/20 flex items-center justify-between">

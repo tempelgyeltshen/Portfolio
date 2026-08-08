@@ -17,21 +17,29 @@ export const VisionValues: React.FC = () => {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
           <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#8A6B29]">
-            OUR LONG-TERM VISION
+            OUR VISION
           </span>
 
           <h2 className="text-4xl sm:text-6xl font-serif font-bold text-[#1C1D21] tracking-tight">
-            BUILDING BUSINESSES THAT LAST
+            A VISION BEYOND BORDERS
           </h2>
 
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#B08B46] to-transparent mx-auto my-6"></div>
 
           <p className="text-lg sm:text-2xl font-serif italic text-[#1C1D21] max-w-3xl mx-auto font-medium leading-relaxed">
-            "Our vision is to develop a diversified Bhutanese business group recognized for quality, integrity, innovation, professionalism, and dependable service."
+            “Remember, it’s not about where you start; it’s about where you’re headed and the impact you make along the way.”
           </p>
 
           <p className="text-xs sm:text-sm text-[#5A5854] font-normal max-w-2xl mx-auto leading-relaxed pt-2">
-            We seek to build businesses that create value not only for customers and partners, but also for employees, communities, and the wider Bhutanese economy.
+            For me, tourism is more than welcoming visitors. It is about creating meaningful experiences that connect people with the heart and soul of Bhutan. As an entrepreneur, I have always believed that preserving our heritage and sharing it with the world can go hand in hand.
+          </p>
+
+          <p className="text-xs sm:text-sm text-[#5A5854] font-normal max-w-2xl mx-auto leading-relaxed">
+            Through Bhutan Land of Happiness Tours and the High Quality Group, my vision is to deliver authentic, sustainable, and luxury travel experiences while empowering local communities and showcasing Bhutan’s rich culture, traditions, and natural beauty.
+          </p>
+
+          <p className="text-xs sm:text-sm text-[#5A5854] font-normal max-w-2xl mx-auto leading-relaxed">
+            Every journey we design reflects our commitment to excellence, genuine hospitality, and creating memories that inspire our guests to return again and again. I warmly invite you to discover the happiness, serenity, and timeless charm of the Kingdom of Bhutan with us.
           </p>
         </div>
       </section>

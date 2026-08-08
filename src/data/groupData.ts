@@ -196,6 +196,10 @@ export const GROUP_COMPANIES: CompanyItem[] = [
       'Relaxed Hospitality for Social Celebrations & Networking'
     ],
     image: ASSETS.hitokara1,
+    gallery: [
+      ASSETS.hitokara1,
+      ASSETS.hitokara2
+    ],
     location: 'Thimphu, Bhutan',
     tagline: 'Where Music, Hospitality, and Vibrant Social Life Meet'
   }
