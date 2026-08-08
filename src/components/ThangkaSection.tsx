@@ -89,10 +89,10 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
         <div>
           <div className="text-center mb-10">
             <h3 className="text-2xl font-serif font-bold text-[#7A1C20]">
-              Sacred Thangka Showcase
+              High Quality Thangka Showcase
             </h3>
             <p className="text-xs text-[#5A5854] uppercase tracking-widest mt-1 font-semibold">
-              Select any artwork to inspect iconography & significance
+              Select an image to view its gallery details
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
                 </div>
 
                 <div className="p-6 pt-0 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-[#7A1C20]">
-                  <span>Inspect Masterpiece</span>
+                  <span>View Gallery Details</span>
                   <Eye className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 </div>
               </div>

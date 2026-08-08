@@ -48,7 +48,7 @@ export const ThangkaModal: React.FC<ThangkaModalProps> = ({ artwork, onClose }) 
         <div className="p-4 bg-[#FAF8F5] border border-[#B08B46]/30 rounded-sm space-y-2">
           <span className="text-xs font-semibold text-[#7A1C20] uppercase tracking-wider flex items-center space-x-1.5">
             <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>Spiritual & Iconographic Significance</span>
+            <span>Artwork &amp; Gallery Notes</span>
           </span>
           <p className="text-xs text-[#5A5854] leading-relaxed font-normal">
             {artwork.significance}

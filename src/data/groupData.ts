@@ -331,26 +331,26 @@ export const WHY_WORK_WITH_US = [
 export const THANGKA_ARTWORKS: ThangkaArtItem[] = [
   {
     id: 'medicine-buddha',
-    title: 'Bhutanese Painted Thangka of Milarepa',
-    category: 'Late 19th–Early 20th Century',
-    description: 'Bhutanese painted thangka of Milarepa (1052–1135), from Dhodeydrag Gonpa, Thimphu, Bhutan.',
+    title: 'High Quality Thangka Painting Gallery',
+    category: 'Gallery Interior',
+    description: 'Interior view of High Quality Thangka Painting, displaying framed Buddhist mandalas, traditional paintings, and craftwork.',
     image: ASSETS.thangpainting1,
-    significance: 'Anonymous work, dated late 19th to early 20th century; source: Dhodeydrag Gonpa, Thimphu, Bhutan.'
+    significance: 'A view of the company gallery and its collection of traditional Buddhist art.'
   },
   {
     id: 'padmasambhava',
-    title: 'Bhutanese Painted Thangka of the Jataka Tales',
-    category: '18th–19th Century',
-    description: 'Bhutanese painted thangka of the Jataka Tales, from Phajoding Gonpa, Thimphu, Bhutan.',
+    title: 'Hand-Painted Buddhist Mandala',
+    category: 'Traditional Mandala Art',
+    description: 'A hand-painted circular Buddhist mandala with concentric geometric forms, Tibetan script, and traditional symbolic details.',
     image: ASSETS.thangpainting2,
-    significance: 'Anonymous work, dated 18th to 19th century; source: Phajoding Gonpa, Thimphu, Bhutan.'
+    significance: 'A contemporary artwork from the High Quality Thangka Painting collection.'
   },
   {
     id: 'wheel-of-life',
-    title: 'Bhutanese Drukpa Appliqué Lineage Thangka',
-    category: '19th Century',
-    description: 'Bhutanese Drukpa appliqué Buddhist lineage thangka with Shakyamuni Buddha in the centre.',
+    title: 'Traditional Buddhist Symbolic Painting',
+    category: 'Traditional Buddhist Art',
+    description: 'A hand-painted Buddhist composition featuring a central circular emblem, Tibetan script, animal figures, and richly detailed borders.',
     image: ASSETS.thangpainting3,
-    significance: 'Anonymous work, dated 19th century; source: Rubin Museum of Art.'
+    significance: 'A contemporary artwork from the High Quality Thangka Painting collection.'
   }
 ];
