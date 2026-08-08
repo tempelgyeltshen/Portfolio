@@ -11,9 +11,9 @@ export const ASSETS = {
   carental2: '/assets/carental2.jpg',
 
   // Thangka Gallery & Painting
-  thangpainting1: '/assets/Showroom ps་1@3x.png',
-  thangpainting2: '/assets/26.jpg',
-  thangpainting3: '/assets/30.jpg',
+  thangpainting1: '/assets/_E2A0196.JPG',
+  thangpainting2: '/assets/26.jpeg',
+  thangpainting3: '/assets/30.jpeg',
 
   // High Quality Travelers
   travelers1: '/assets/travelers1.jpg',
@@ -24,8 +24,8 @@ export const ASSETS = {
   trading1: '/assets/trading.jpeg',
   food247_1: '/assets/restaurant.jpeg',
   enterprise1: '/assets/image.png',
-  hitokara1: '/assets/karokae.jpeg',
-  hitokara2: '/assets/karoake2.jpeg',
+  hitokara1: '/assets/hitokora.jpg',
+  hitokara2: '/assets/_E2A0245.JPG',
 
   // Leadership
   chairman_pema_tshering: '/assets/chairman_pema_tshering.png',

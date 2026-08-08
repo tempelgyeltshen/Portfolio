@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  /* Keep anchored sections clear of the fixed header */
+  scroll-padding-top: 5.5rem;
+}
+
 @layer base {
   :root {
     --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
