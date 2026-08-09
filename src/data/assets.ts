@@ -9,9 +9,10 @@ export const ASSETS = {
   // Car Rental Division
   carental1: '/assets/carental1.jpg',
   carental2: '/assets/carental2.jpg',
+  carental3: '/assets/carental3.jpg',
 
   // Thangka Gallery & Painting
-  thangpainting1: '/assets/_E2A0196.JPG',
+  thangpainting1: '/assets/Showroom%20ps%E0%BC%8B1@3x.webp',
   thangpainting2: '/assets/26.jpeg',
   thangpainting3: '/assets/30.jpeg',
 
@@ -25,10 +26,11 @@ export const ASSETS = {
   food247_1: '/assets/restaurant.jpeg',
   enterprise1: '/assets/image.png',
   hitokara1: '/assets/hitokora.jpg',
-  hitokara2: '/assets/_E2A0245.JPG',
+  hitokara2: '/assets/karokae.webp',
 
   // Leadership
   chairman_pema_tshering: '/assets/chairman_pema_tshering.png',
+  ceo_pic: '/assets/CEO%20Pic.jpeg',
 
   // Core 5 Bhutan Operational Regions
   region_thimphu: '/assets/thimphu_region.jpg',

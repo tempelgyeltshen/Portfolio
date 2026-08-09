@@ -29,6 +29,15 @@ export const CHAIRMAN_INFO = {
   ]
 };
 
+export const PRESIDENT_INFO = {
+  name: 'Mr. Pema Tshering',
+  title: 'President & CEO',
+  company: 'High Quality Pvt. Ltd.',
+  portraitImage: ASSETS.ceo_pic,
+  portraitAlt: 'Mr. Pema Tshering, President & CEO of High Quality Pvt. Ltd.',
+  shortPhilosophy: "My role as President & CEO is to ensure every company within the High Quality Group creates real opportunities — developing people, building trusted partnerships, and contributing meaningfully to Bhutan's economic growth.",
+};
+
 export const LEADERSHIP_PHILOSOPHY: LeadershipPillar[] = [
   {
     title: 'Integrity',
@@ -139,7 +148,8 @@ export const GROUP_COMPANIES: CompanyItem[] = [
     image: ASSETS.carental1,
     gallery: [
       ASSETS.carental1,
-      ASSETS.carental2
+      ASSETS.carental2,
+      ASSETS.carental3
     ],
     location: 'Thimphu, Bhutan',
     tagline: 'Safety, Comfort, and Dependability on Bhutan Highways'

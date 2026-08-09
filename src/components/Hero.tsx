@@ -1,5 +1,5 @@
 import React from 'react';
-import { CHAIRMAN_INFO } from '../data/groupData';
+import { PRESIDENT_INFO } from '../data/groupData';
 import { ChevronDown, ArrowRight, ShieldCheck, Award } from 'lucide-react';
 
 interface HeroProps {
@@ -24,7 +24,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreGroup, onChairmanMessage })
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#B08B46]/10 border border-[#B08B46]/30">
               <span className="w-2 h-2 rounded-full bg-[#B08B46] animate-pulse"></span>
               <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#8A6B29]">
-                CHAIRMAN | HIGH QUALITY PVT. LTD.
+                PRESIDENT & CEO | HIGH QUALITY PVT. LTD.
               </span>
             </div>
 
@@ -37,9 +37,9 @@ export const Hero: React.FC<HeroProps> = ({ onExploreGroup, onChairmanMessage })
               Delivering Excellence.
             </h1>
 
-            {/* Short Paragraph explaining Chairman's philosophy */}
+            {/* Short Paragraph explaining President & CEO's philosophy */}
             <p className="text-base sm:text-lg text-[#5A5854] max-w-2xl font-normal leading-relaxed">
-              {CHAIRMAN_INFO.shortPhilosophy}
+              {PRESIDENT_INFO.shortPhilosophy}
             </p>
 
             {/* Quick Strategic Badges */}
@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreGroup, onChairmanMessage })
                 onClick={onChairmanMessage}
                 className="px-7 py-3.5 text-xs uppercase tracking-[0.2em] font-semibold text-[#1C1D21] bg-white border border-[#B08B46]/40 hover:border-[#B08B46] hover:bg-[#FAF7F2] transition-all rounded-sm shadow-sm"
               >
-                Chairman's Message
+                President's Message
               </button>
             </div>
           </div>
@@ -84,8 +84,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreGroup, onChairmanMessage })
               <div className="relative bg-white rounded-sm overflow-hidden border border-[#B08B46]/30 shadow-xl group">
                 <div className="relative aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-[#FAF7F2]">
                   <img
-                    src={CHAIRMAN_INFO.portraitImage}
-                    alt={CHAIRMAN_INFO.portraitAlt}
+                    src={PRESIDENT_INFO.portraitImage}
+                    alt={PRESIDENT_INFO.portraitAlt}
                     className="w-full h-full object-cover object-top filter brightness-100 contrast-105 group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Subtle Bhutanese Watermark Badge */}
@@ -99,10 +99,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreGroup, onChairmanMessage })
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-xl font-serif font-bold text-[#1C1D21] tracking-wide">
-                        {CHAIRMAN_INFO.name}
+                        {PRESIDENT_INFO.name}
                       </h3>
                       <p className="text-xs uppercase tracking-widest text-[#8A6B29] font-semibold mt-0.5">
-                        {CHAIRMAN_INFO.title} | {CHAIRMAN_INFO.company}
+                        {PRESIDENT_INFO.title} | {PRESIDENT_INFO.company}
                       </p>
                     </div>
                     <div className="w-10 h-10 rounded-full border border-[#B08B46]/40 flex items-center justify-center bg-[#B08B46]/10 text-[#8A6B29] font-serif font-bold text-sm">
