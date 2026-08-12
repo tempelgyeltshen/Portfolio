@@ -1,4 +1,5 @@
-// Lists the actual filenames the app references (see src/data/assets.ts),
+
+hk// Lists the actual filenames the app references (see src/data/assets.ts),
 // grouped by division. Upload replacement images using these exact names.
 const assetsList = [
   // Car Rental Division

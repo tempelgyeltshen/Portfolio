@@ -5,27 +5,27 @@ import { ShieldCheck, Lightbulb, Award, Handshake, Quote } from 'lucide-react';
 export const ChairmanSection: React.FC = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
-      case 'ShieldCheck': return <ShieldCheck className="w-5 h-5 text-[#8A6B29]" />;
-      case 'Lightbulb': return <Lightbulb className="w-5 h-5 text-[#8A6B29]" />;
-      case 'Award': return <Award className="w-5 h-5 text-[#8A6B29]" />;
-      case 'Handshake': return <Handshake className="w-5 h-5 text-[#8A6B29]" />;
-      default: return <Award className="w-5 h-5 text-[#8A6B29]" />;
+      case 'ShieldCheck': return <ShieldCheck className="w-5 h-5 text-[#ccd5ae]" />;
+      case 'Lightbulb': return <Lightbulb className="w-5 h-5 text-[#ccd5ae]" />;
+      case 'Award': return <Award className="w-5 h-5 text-[#ccd5ae]" />;
+      case 'Handshake': return <Handshake className="w-5 h-5 text-[#ccd5ae]" />;
+      default: return <Award className="w-5 h-5 text-[#ccd5ae]" />;
     }
   };
 
   return (
-    <section id="chairman" className="py-24 bg-[#FAF8F5] text-[#1C1D21] relative border-t border-gray-200">
+    <section id="chairman" className="py-24 bg-[#faedcd] text-[#1C1D21] relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8A6B29]">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#ccd5ae]">
             EXECUTIVE LEADERSHIP & VISION
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1C1D21] tracking-tight">
             Chairman's Statement
           </h2>
-          <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#B08B46] to-transparent mx-auto mt-4"></div>
+          <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#d4a373] to-transparent mx-auto mt-4"></div>
         </div>
 
         {/* Chairman Profile & Message Grid */}
@@ -34,8 +34,8 @@ export const ChairmanSection: React.FC = () => {
           {/* LEFT: Large Portrait Container */}
           <div className="lg:col-span-5 relative">
             <div className="sticky top-28 space-y-6">
-              <div className="relative rounded-sm overflow-hidden border border-[#B08B46]/30 shadow-xl bg-white">
-                <div className="aspect-[3/4] relative bg-[#FAF7F2]">
+              <div className="relative rounded-sm overflow-hidden border border-[#d4a373]/30 shadow-xl bg-white">
+                <div className="aspect-[3/4] relative bg-[#faedcd]">
                   <img
                     src={CHAIRMAN_INFO.portraitImage}
                     alt={CHAIRMAN_INFO.portraitAlt}
@@ -43,11 +43,11 @@ export const ChairmanSection: React.FC = () => {
                   />
                 </div>
 
-                <div className="p-6 bg-white border-t border-[#B08B46]/20">
+                <div className="p-6 bg-white border-t border-[#d4a373]/20">
                   <h3 className="text-2xl font-serif font-bold text-[#1C1D21] tracking-wide">
                     MR. PEMA TSHERING
                   </h3>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#8A6B29] font-semibold mt-1">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#ccd5ae] font-semibold mt-1">
                     Chairman | High Quality Pvt. Ltd.
                   </p>
                   
@@ -58,7 +58,7 @@ export const ChairmanSection: React.FC = () => {
                     </p>
                     <p className="flex items-center justify-between">
                       <span className="text-[#8E8B85]">Corporate Group:</span>
-                      <span className="text-[#8A6B29] font-semibold">7 Diversified Business Arms</span>
+                      <span className="text-[#ccd5ae] font-semibold">7 Diversified Business Arms</span>
                     </p>
                   </div>
                 </div>
@@ -69,11 +69,11 @@ export const ChairmanSection: React.FC = () => {
           {/* RIGHT: Chairman's Message */}
           <div className="lg:col-span-7 space-y-8">
             {/* Large Decorative Quote & Header */}
-            <div className="relative pl-6 sm:pl-8 border-l-2 border-[#B08B46] space-y-6">
-              <Quote className="w-12 h-12 text-[#B08B46]/20 absolute -top-4 left-4 pointer-events-none" />
+            <div className="relative pl-6 sm:pl-8 border-l-2 border-[#d4a373] space-y-6">
+              <Quote className="w-12 h-12 text-[#d4a373]/20 absolute -top-4 left-4 pointer-events-none" />
               
               <div className="space-y-1">
-                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#8A6B29]">
+                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#ccd5ae]">
                   COMMERCIAL PHILOSOPHY & RESPONSIBLE GROWTH
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-serif font-semibold text-[#1C1D21] leading-snug">
@@ -89,16 +89,16 @@ export const ChairmanSection: React.FC = () => {
               </div>
 
               {/* Official Chairman Signature Block */}
-              <div className="pt-6 border-t border-[#B08B46]/20 flex items-center justify-between">
+              <div className="pt-6 border-t border-[#d4a373]/20 flex items-center justify-between">
                 <div>
                   <p className="text-xl font-serif font-bold text-[#1C1D21] tracking-wide">
                     Pema Tshering
                   </p>
-                  <p className="text-xs uppercase tracking-widest text-[#8A6B29] font-semibold">
+                  <p className="text-xs uppercase tracking-widest text-[#ccd5ae] font-semibold">
                     Chairman, High Quality Pvt. Ltd.
                   </p>
                 </div>
-                <div className="px-3 py-1 rounded bg-[#B08B46]/10 border border-[#B08B46]/30 text-[11px] uppercase tracking-widest text-[#8A6B29] font-semibold">
+                <div className="px-3 py-1 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 text-[11px] uppercase tracking-widest text-[#ccd5ae] font-semibold">
                   Official Corporate Statement
                 </div>
               </div>
@@ -114,7 +114,7 @@ export const ChairmanSection: React.FC = () => {
             <h3 className="text-2xl font-serif font-bold text-[#1C1D21]">
               Leadership Philosophy
             </h3>
-            <p className="text-xs uppercase tracking-[0.2em] text-[#8A6B29] font-semibold mt-1">
+            <p className="text-xs uppercase tracking-[0.2em] text-[#ccd5ae] font-semibold mt-1">
               Four Guiding Pillars of the High Quality Group
             </p>
           </div>
@@ -123,12 +123,12 @@ export const ChairmanSection: React.FC = () => {
             {LEADERSHIP_PHILOSOPHY.map((pillar, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-white border border-[#B08B46]/20 rounded-sm hover:border-[#B08B46] hover:shadow-md transition-all group"
+                className="p-6 bg-white border border-[#d4a373]/20 rounded-sm hover:border-[#d4a373] hover:shadow-md transition-all group"
               >
-                <div className="w-12 h-12 rounded-sm bg-[#B08B46]/10 border border-[#B08B46]/30 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 rounded-sm bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
                   {getIcon(pillar.icon)}
                 </div>
-                <h4 className="text-lg font-serif font-bold text-[#1C1D21] mb-2 group-hover:text-[#8A6B29] transition-colors">
+                <h4 className="text-lg font-serif font-bold text-[#1C1D21] mb-2 group-hover:text-[#ccd5ae] transition-colors">
                   {pillar.title}
                 </h4>
                 <p className="text-xs text-[#5A5854] font-normal leading-relaxed">

@@ -13,30 +13,30 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
 
   return (
     <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200">
-      <div className="bg-white border border-[#B08B46]/40 rounded-sm max-w-3xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl my-8">
+      <div className="bg-white border border-[#d4a373]/40 rounded-sm max-w-3xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl my-8">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-[#5A5854] hover:text-[#1C1D21] bg-[#FAF8F5] rounded-full transition-colors border border-gray-200"
+          className="absolute top-4 right-4 p-2 text-[#5A5854] hover:text-[#1C1D21] bg-[#faedcd] rounded-full transition-colors border border-gray-200"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Hero Image */}
-        <div className="relative aspect-[16/9] rounded-sm overflow-hidden border border-[#B08B46]/30">
+        <div className="relative aspect-[16/9] rounded-sm overflow-hidden border border-[#d4a373]/30">
           <img
             src={company.image}
             alt={company.name}
             className="w-full h-full object-cover"
           />
-          <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded text-[11px] font-serif font-bold text-[#8A6B29] shadow-sm">
+          <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded text-[11px] font-serif font-bold text-[#ccd5ae] shadow-sm">
             COMPANY {company.number}
           </div>
           {company.location && (
             <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded text-[10px] text-[#1C1D21] font-medium flex items-center space-x-1 shadow-sm">
-              <MapPin className="w-3 h-3 text-[#8A6B29]" />
+              <MapPin className="w-3 h-3 text-[#ccd5ae]" />
               <span>{company.location}</span>
             </div>
           )}
@@ -44,13 +44,13 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
 
         {/* Company Overview */}
         <div className="space-y-3">
-          <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#8A6B29]">
+          <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#ccd5ae]">
             {company.industry}
           </span>
           <h2 className="text-3xl font-serif font-bold text-[#1C1D21]">
             {company.name}
           </h2>
-          <p className="text-base font-serif italic text-[#8A6B29] font-medium">
+          <p className="text-base font-serif italic text-[#ccd5ae] font-medium">
             "{company.subtitle}"
           </p>
         </div>
@@ -62,13 +62,13 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
 
         {/* Key Highlights */}
         <div className="pt-4 border-t border-gray-200 space-y-3">
-          <h4 className="text-xs uppercase tracking-widest font-semibold text-[#8A6B29]">
+          <h4 className="text-xs uppercase tracking-widest font-semibold text-[#ccd5ae]">
             Core Portfolio Highlights
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {company.highlights.map((item, idx) => (
-              <div key={idx} className="flex items-start space-x-2 text-xs text-[#1C1D21] font-medium bg-[#FAF8F5] p-2.5 rounded-sm border border-gray-200">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#8A6B29] shrink-0 mt-0.5" />
+              <div key={idx} className="flex items-start space-x-2 text-xs text-[#1C1D21] font-medium bg-[#faedcd] p-2.5 rounded-sm border border-gray-200">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#ccd5ae] shrink-0 mt-0.5" />
                 <span>{item}</span>
               </div>
             ))}
@@ -78,7 +78,7 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
         {/* Gallery Images if available */}
         {company.gallery && company.gallery.length > 0 && (
           <div className="pt-4 border-t border-gray-200 space-y-3">
-            <h4 className="text-xs uppercase tracking-widest font-semibold text-[#8A6B29]">
+            <h4 className="text-xs uppercase tracking-widest font-semibold text-[#ccd5ae]">
               Visual Gallery
             </h4>
             <div className="grid grid-cols-3 gap-3">
@@ -96,7 +96,7 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
           <div className="text-xs text-[#5A5854]">
             {company.contactEmail && (
               <p className="flex items-center space-x-1">
-                <Mail className="w-3.5 h-3.5 text-[#8A6B29]" />
+                <Mail className="w-3.5 h-3.5 text-[#ccd5ae]" />
                 <span>{company.contactEmail}</span>
               </p>
             )}
@@ -105,7 +105,7 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
           <div className="flex items-center space-x-3 w-full sm:w-auto">
             <button
               onClick={onClose}
-              className="px-5 py-2.5 text-xs uppercase tracking-widest text-[#5A5854] bg-[#FAF8F5] hover:bg-gray-200 rounded-sm border border-gray-200 font-medium"
+              className="px-5 py-2.5 text-xs uppercase tracking-widest text-[#5A5854] bg-[#faedcd] hover:bg-gray-200 rounded-sm border border-gray-200 font-medium"
             >
               Close
             </button>
@@ -114,10 +114,10 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({ company, onClose, on
                 onClose();
                 onInquire(`Inquiry regarding ${company.name}`);
               }}
-              className="px-6 py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#B08B46] transition-colors rounded-sm flex items-center space-x-2 shadow-md"
+              className="px-6 py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#d4a373] transition-colors rounded-sm flex items-center space-x-2 shadow-md"
             >
               <span>Connect with Division</span>
-              <ArrowRight className="w-3.5 h-3.5 text-[#B08B46]" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#d4a373]" />
             </button>
           </div>
         </div>

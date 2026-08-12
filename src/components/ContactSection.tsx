@@ -29,11 +29,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#FFFFFF] text-[#1C1D21] relative border-t border-gray-200">
+    <section id="contact" className="py-24 bg-[#e9edc9] text-[#1C1D21] relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8A6B29]">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#ccd5ae]">
             EXECUTIVE ENGAGEMENT
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#1C1D21] tracking-tight">
@@ -48,9 +48,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
           
           {/* LEFT: Official Contact Details */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="p-8 bg-[#FAF8F5] border border-[#B08B46]/30 rounded-sm space-y-6 shadow-md">
+            <div className="p-8 bg-[#faedcd] border border-[#d4a373]/30 rounded-sm space-y-6 shadow-md">
               <div>
-                <span className="text-xs uppercase tracking-widest text-[#8A6B29] font-semibold block mb-1">
+                <span className="text-xs uppercase tracking-widest text-[#ccd5ae] font-semibold block mb-1">
                   OFFICE OF THE CHAIRMAN
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-[#1C1D21]">
@@ -64,9 +64,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
               <div className="space-y-4 pt-4 border-t border-gray-200 text-sm">
                 <a
                   href={`mailto:${CHAIRMAN_INFO.email}`}
-                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#8A6B29] transition-colors group"
+                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#ccd5ae] transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded bg-[#B08B46]/10 border border-[#B08B46]/30 flex items-center justify-center shrink-0 text-[#8A6B29]">
+                  <div className="w-10 h-10 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center shrink-0 text-[#ccd5ae]">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
@@ -77,9 +77,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
 
                 <a
                   href={`tel:${CHAIRMAN_INFO.phone}`}
-                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#8A6B29] transition-colors group"
+                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#ccd5ae] transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded bg-[#B08B46]/10 border border-[#B08B46]/30 flex items-center justify-center shrink-0 text-[#8A6B29]">
+                  <div className="w-10 h-10 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center shrink-0 text-[#ccd5ae]">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
@@ -92,9 +92,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                   href={CHAIRMAN_INFO.webUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#8A6B29] transition-colors group"
+                  className="flex items-center space-x-3.5 text-[#1C1D21] hover:text-[#ccd5ae] transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded bg-[#B08B46]/10 border border-[#B08B46]/30 flex items-center justify-center shrink-0 text-[#8A6B29]">
+                  <div className="w-10 h-10 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center shrink-0 text-[#ccd5ae]">
                     <Globe className="w-4 h-4" />
                   </div>
                   <div>
@@ -105,7 +105,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
               </div>
 
               <div className="pt-4 border-t border-gray-200 space-y-2">
-                <span className="text-xs font-semibold text-[#8A6B29] uppercase tracking-wider block">
+                <span className="text-xs font-semibold text-[#ccd5ae] uppercase tracking-wider block">
                   Enterprise Headquarters:
                 </span>
                 <p className="text-xs text-[#5A5854] font-normal leading-relaxed">
@@ -117,10 +117,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
           </div>
 
           {/* RIGHT: Corporate Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#FAF8F5] border border-[#B08B46]/30 rounded-sm p-8 sm:p-10 shadow-md">
+          <div className="lg:col-span-7 bg-[#faedcd] border border-[#d4a373]/30 rounded-sm p-8 sm:p-10 shadow-md">
             {submitted ? (
               <div className="text-center py-12 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#B08B46]/20 border border-[#B08B46] flex items-center justify-center mx-auto text-[#8A6B29]">
+                <div className="w-16 h-16 rounded-full bg-[#d4a373]/20 border border-[#d4a373] flex items-center justify-center mx-auto text-[#ccd5ae]">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-[#1C1D21]">
@@ -131,7 +131,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#B08B46] transition-colors rounded-sm mt-4 shadow-md"
+                  className="px-6 py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#d4a373] transition-colors rounded-sm mt-4 shadow-md"
                 >
                   Send Another Inquiry
                 </button>
@@ -140,7 +140,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="border-b border-gray-200 pb-4 mb-2">
                   <h3 className="text-xl font-serif font-bold text-[#1C1D21] flex items-center space-x-2">
-                    <Building2 className="w-5 h-5 text-[#8A6B29]" />
+                    <Building2 className="w-5 h-5 text-[#ccd5ae]" />
                     <span>Corporate Inquiry Form</span>
                   </h3>
                   <p className="text-xs text-[#5A5854] mt-1 font-normal">
@@ -150,7 +150,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
+                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#ccd5ae] mb-1.5">
                       Your Full Name *
                     </label>
                     <input
@@ -159,12 +159,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Tashi Dorji"
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#B08B46]"
+                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#d4a373]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
+                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#ccd5ae] mb-1.5">
                       Email Address *
                     </label>
                     <input
@@ -173,14 +173,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="e.g. name@company.com"
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#B08B46]"
+                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#d4a373]"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
+                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#ccd5ae] mb-1.5">
                       Phone / WhatsApp Number
                     </label>
                     <input
@@ -188,12 +188,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+975..."
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#B08B46]"
+                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#d4a373]"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
+                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#ccd5ae] mb-1.5">
                       Organization / Company
                     </label>
                     <input
@@ -201,7 +201,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                       value={formData.organization}
                       onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                       placeholder="e.g. Global Travel Inc."
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#B08B46]"
+                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] placeholder-gray-400 focus:outline-none focus:border-[#d4a373]"
                     />
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
                   <select
                     value={formData.inquiryType}
                     onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] focus:outline-none focus:border-[#B08B46]"
+                    className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#1C1D21] focus:outline-none focus:border-[#d4a373]"
                   >
                     <option value="Partnership">Commercial Partnership</option>
                     <option value="Tourism">High Quality Travelers (Tourism)</option>
@@ -242,9 +242,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject =
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 text-xs uppercase tracking-[0.2em] font-bold text-white bg-[#1C1D21] hover:bg-[#B08B46] transition-colors rounded-sm flex items-center justify-center space-x-2 shadow-md"
+                  className="w-full py-3.5 text-xs uppercase tracking-[0.2em] font-bold text-white bg-[#1C1D21] hover:bg-[#d4a373] transition-colors rounded-sm flex items-center justify-center space-x-2 shadow-md"
                 >
-                  <Send className="w-4 h-4 text-[#B08B46]" />
+                  <Send className="w-4 h-4 text-[#d4a373]" />
                   <span>Transmit Inquiry to Chairman's Office</span>
                 </button>
               </form>

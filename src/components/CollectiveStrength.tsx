@@ -8,11 +8,11 @@ interface CollectiveStrengthProps {
 
 export const CollectiveStrength: React.FC<CollectiveStrengthProps> = ({ onSelectCompany }) => {
   return (
-    <section className="py-24 bg-[#FAF8F5] text-[#1C1D21] relative border-t border-gray-200">
+    <section className="py-24 bg-[#faedcd] text-[#1C1D21] relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8A6B29]">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#ccd5ae]">
             OUR COLLECTIVE STRENGTH
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1C1D21] tracking-tight">
@@ -28,11 +28,11 @@ export const CollectiveStrength: React.FC<CollectiveStrengthProps> = ({ onSelect
             <div
               key={company.id}
               onClick={() => onSelectCompany(company)}
-              className="p-6 bg-white border border-[#B08B46]/20 rounded-sm hover:border-[#B08B46] hover:shadow-md transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-white border border-[#d4a373]/20 rounded-sm hover:border-[#d4a373] hover:shadow-md transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-serif font-bold text-[#8A6B29]">
+                  <span className="text-xs font-serif font-bold text-[#ccd5ae]">
                     {company.number}
                   </span>
                   <span className="text-[10px] uppercase tracking-wider text-[#5A5854] font-medium px-2 py-0.5 rounded bg-gray-100">
@@ -40,7 +40,7 @@ export const CollectiveStrength: React.FC<CollectiveStrengthProps> = ({ onSelect
                   </span>
                 </div>
 
-                <h3 className="text-lg font-serif font-bold text-[#1C1D21] group-hover:text-[#8A6B29] transition-colors mb-2">
+                <h3 className="text-lg font-serif font-bold text-[#1C1D21] group-hover:text-[#ccd5ae] transition-colors mb-2">
                   {company.name}
                 </h3>
 
@@ -49,7 +49,7 @@ export const CollectiveStrength: React.FC<CollectiveStrengthProps> = ({ onSelect
                 </p>
               </div>
 
-              <div className="pt-4 mt-4 border-t border-gray-100 flex items-center justify-between text-[11px] font-semibold text-[#8A6B29]">
+              <div className="pt-4 mt-4 border-t border-gray-100 flex items-center justify-between text-[11px] font-semibold text-[#ccd5ae]">
                 <span>Explore Capabilities</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </div>

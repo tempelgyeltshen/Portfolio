@@ -9,13 +9,13 @@ interface GroupCompaniesProps {
 
 export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany }) => {
   return (
-    <section id="businesses" className="py-28 bg-[#FFFFFF] text-[#1C1D21] relative border-t border-gray-200">
+    <section id="businesses" className="py-28 bg-[#e9edc9] text-[#1C1D21] relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 border-b border-[#B08B46]/20 pb-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 border-b border-[#d4a373]/20 pb-8">
           <div className="space-y-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8A6B29]">
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#ccd5ae]">
               OUR DIVERSIFIED BUSINESSES
             </span>
             <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#1C1D21] tracking-tight">
@@ -44,10 +44,10 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
                     isEven ? 'lg:order-1' : 'lg:order-2'
                   }`}
                 >
-                  <div className="relative rounded-sm overflow-hidden border border-[#B08B46]/30 bg-[#FAF7F2] shadow-lg">
+                  <div className="relative rounded-sm overflow-hidden border border-[#d4a373]/30 bg-[#faedcd] shadow-lg">
                     {/* Company Index Number Badge */}
-                    <div className="absolute top-4 left-4 z-20 bg-white/95 backdrop-blur-md px-4 py-2 border border-[#B08B46]/40 rounded-sm shadow-sm">
-                      <span className="text-xl sm:text-2xl font-serif font-bold text-[#8A6B29]">
+                    <div className="absolute top-4 left-4 z-20 bg-white/95 backdrop-blur-md px-4 py-2 border border-[#d4a373]/40 rounded-sm shadow-sm">
+                      <span className="text-xl sm:text-2xl font-serif font-bold text-[#ccd5ae]">
                         {company.number}
                       </span>
                     </div>
@@ -62,7 +62,7 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
 
                     {company.location && (
                       <div className="absolute bottom-4 right-4 z-20 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-sm border border-gray-200 text-[11px] text-[#1C1D21] font-medium flex items-center space-x-1.5 shadow-sm">
-                        <MapPin className="w-3.5 h-3.5 text-[#8A6B29]" />
+                        <MapPin className="w-3.5 h-3.5 text-[#ccd5ae]" />
                         <span>{company.location}</span>
                       </div>
                     )}
@@ -76,13 +76,13 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
                   }`}
                 >
                   <div className="space-y-2">
-                    <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#8A6B29]">
+                    <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#ccd5ae]">
                       {company.industry}
                     </span>
-                    <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#1C1D21] group-hover:text-[#8A6B29] transition-colors">
+                    <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#1C1D21] group-hover:text-[#ccd5ae] transition-colors">
                       {company.name}
                     </h3>
-                    <p className="text-sm font-serif italic text-[#8A6B29] font-semibold">
+                    <p className="text-sm font-serif italic text-[#ccd5ae] font-semibold">
                       "{company.subtitle}"
                     </p>
                   </div>
@@ -92,10 +92,10 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
                   </p>
 
                   {/* Highlights Bullet List */}
-                  <div className="space-y-2 pt-2 border-t border-[#B08B46]/15">
+                  <div className="space-y-2 pt-2 border-t border-[#d4a373]/15">
                     {company.highlights.slice(0, 3).map((item, hIdx) => (
                       <div key={hIdx} className="flex items-start space-x-2.5 text-xs text-[#4A4843]">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#8A6B29] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#ccd5ae] shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -105,10 +105,10 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
                   <div className="pt-4">
                     <button
                       onClick={() => onSelectCompany(company)}
-                      className="px-6 py-3 text-xs uppercase tracking-[0.2em] font-bold text-white bg-[#1C1D21] hover:bg-[#B08B46] transition-colors rounded-sm flex items-center space-x-2 shadow-md group/btn"
+                      className="px-6 py-3 text-xs uppercase tracking-[0.2em] font-bold text-white bg-[#1C1D21] hover:bg-[#d4a373] transition-colors rounded-sm flex items-center space-x-2 shadow-md group/btn"
                     >
                       <span>Explore {company.name}</span>
-                      <ArrowUpRight className="w-4 h-4 text-[#B08B46] group-hover/btn:text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-all" />
+                      <ArrowUpRight className="w-4 h-4 text-[#d4a373] group-hover/btn:text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-all" />
                     </button>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
   const promotedLocations = ['Thimphu', 'Paro', 'Lobesa (Punakha)', 'Gangtey', 'Bumthang'];
 
   return (
-    <section id="thangka-section" className="py-24 bg-[#FAF8F5] text-[#1C1D21] relative overflow-hidden border-t border-gray-200">
+    <section id="thangka-section" className="py-24 bg-[#faedcd] text-[#1C1D21] relative overflow-hidden border-t border-gray-200">
       {/* Traditional Pattern Background */}
       <div className="absolute inset-0 bhutan-pattern-dense opacity-30 pointer-events-none"></div>
 
@@ -27,7 +27,7 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
             PRESERVING BHUTAN'S ARTISTIC HERITAGE
           </h2>
 
-          <p className="text-base sm:text-lg font-serif italic text-[#8A6B29] font-semibold">
+          <p className="text-base sm:text-lg font-serif italic text-[#ccd5ae] font-semibold">
             High Quality Thangka Painting
           </p>
 
@@ -37,7 +37,7 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
         </div>
 
         {/* Narrative & Philosophy Box */}
-        <div className="bg-white border border-[#B08B46]/30 rounded-sm p-8 sm:p-12 mb-16 shadow-md relative">
+        <div className="bg-white border border-[#d4a373]/30 rounded-sm p-8 sm:p-12 mb-16 shadow-md relative">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-[3px] bg-[#7A1C20]"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -64,7 +64,7 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
               </div>
             </div>
 
-            <div className="bg-[#FAF7F2] border border-[#B08B46]/30 p-6 rounded-sm space-y-4">
+            <div className="bg-[#faedcd] border border-[#d4a373]/30 p-6 rounded-sm space-y-4">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#7A1C20] block">
                 Promoted Cultural Locations
               </span>
@@ -101,10 +101,10 @@ export const ThangkaSection: React.FC<ThangkaSectionProps> = ({ onSelectArtwork 
               <div
                 key={art.id}
                 onClick={() => onSelectArtwork(art)}
-                className="bg-white border border-[#B08B46]/30 rounded-sm overflow-hidden hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between"
+                className="bg-white border border-[#d4a373]/30 rounded-sm overflow-hidden hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between"
               >
                 <div>
-                  <div className="relative aspect-[3/4] overflow-hidden bg-[#FAF7F2]">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-[#faedcd]">
                     <img
                       src={art.image}
                       alt={art.title}

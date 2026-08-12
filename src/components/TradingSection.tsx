@@ -30,14 +30,14 @@ export const TradingSection: React.FC<TradingSectionProps> = ({ onInquire }) => 
   ];
 
   return (
-    <section id="trading-section" className="py-24 bg-[#FFFFFF] text-[#1C1D21] relative border-t border-gray-200">
+    <section id="trading-section" className="py-24 bg-[#e9edc9] text-[#1C1D21] relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* LEFT: Commercial Overview */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#B08B46]/10 border border-[#B08B46]/30 text-xs uppercase tracking-[0.2em] text-[#8A6B29] font-semibold">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 text-xs uppercase tracking-[0.2em] text-[#ccd5ae] font-semibold">
               <span>03 — COMMERCIAL & TRADING</span>
             </div>
 
@@ -45,7 +45,7 @@ export const TradingSection: React.FC<TradingSectionProps> = ({ onInquire }) => 
               High Quality Trading
             </h2>
 
-            <p className="text-base sm:text-lg font-serif italic text-[#8A6B29] font-semibold">
+            <p className="text-base sm:text-lg font-serif italic text-[#ccd5ae] font-semibold">
               Connecting Products, Markets and Opportunities
             </p>
 
@@ -53,18 +53,18 @@ export const TradingSection: React.FC<TradingSectionProps> = ({ onInquire }) => 
               High Quality Trading forms part of the group's commercial interests, positioned around the sourcing, distribution, and movement of products required by businesses across Bhutan.
             </p>
 
-            <div className="p-4 bg-[#FAF8F5] border border-gray-200 rounded text-xs text-[#5A5854] space-y-1">
-              <span className="text-[#8A6B29] font-semibold uppercase tracking-wider block">Note:</span>
+            <div className="p-4 bg-[#faedcd] border border-gray-200 rounded text-xs text-[#5A5854] space-y-1">
+              <span className="text-[#ccd5ae] font-semibold uppercase tracking-wider block">Note:</span>
               <p>Detailed product categories and distribution partnerships are structured strictly upon verified client specifications.</p>
             </div>
 
             <div className="pt-2">
               <button
                 onClick={() => onInquire('Commercial Trading Inquiry')}
-                className="px-6 py-3 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#B08B46] transition-colors rounded-sm flex items-center space-x-2 shadow-md"
+                className="px-6 py-3 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#d4a373] transition-colors rounded-sm flex items-center space-x-2 shadow-md"
               >
                 <span>Initiate Commercial Partnership</span>
-                <ArrowRight className="w-4 h-4 text-[#B08B46]" />
+                <ArrowRight className="w-4 h-4 text-[#d4a373]" />
               </button>
             </div>
           </div>
@@ -77,12 +77,12 @@ export const TradingSection: React.FC<TradingSectionProps> = ({ onInquire }) => 
               return (
                 <div
                   key={idx}
-                  className="p-6 bg-[#FAF8F5] border border-[#B08B46]/20 rounded-sm hover:border-[#B08B46] hover:shadow-md transition-all group"
+                  className="p-6 bg-[#faedcd] border border-[#d4a373]/20 rounded-sm hover:border-[#d4a373] hover:shadow-md transition-all group"
                 >
-                  <div className="w-10 h-10 rounded-sm bg-[#B08B46]/10 border border-[#B08B46]/30 flex items-center justify-center mb-4 text-[#8A6B29] group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-sm bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center mb-4 text-[#ccd5ae] group-hover:scale-110 transition-transform">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#1C1D21] mb-2 group-hover:text-[#8A6B29] transition-colors">
+                  <h3 className="text-lg font-serif font-bold text-[#1C1D21] mb-2 group-hover:text-[#ccd5ae] transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-xs text-[#5A5854] font-normal leading-relaxed">

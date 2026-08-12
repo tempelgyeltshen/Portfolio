@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#1C1D21] font-sans antialiased selection:bg-[#B08B46] selection:text-white">
+    <div className="min-h-screen bg-[#fefae0] text-[#1C1D21] font-sans antialiased selection:bg-[#d4a373] selection:text-white">
       {/* Fixed Sticky Header Navigation */}
       <Navbar
         onOpenSearch={() => setIsSearchOpen(true)}
