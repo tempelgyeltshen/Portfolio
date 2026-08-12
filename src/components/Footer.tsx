@@ -64,6 +64,11 @@ export const Footer: React.FC = () => {
                 </button>
               </li>
               <li>
+                <button onClick={() => handleNavClick('#vision')} className="hover:text-[#ccd5ae] transition-colors">
+                  Vision & Corporate Values
+                </button>
+              </li>
+              <li>
                 <button onClick={() => handleNavClick('#businesses')} className="hover:text-[#ccd5ae] transition-colors">
                   Group Companies (01 - 07)
                 </button>
@@ -71,11 +76,6 @@ export const Footer: React.FC = () => {
               <li>
                 <button onClick={() => handleNavClick('#bhutan-presence')} className="hover:text-[#ccd5ae] transition-colors">
                   Bhutan Presence & Dzongkhags
-                </button>
-              </li>
-              <li>
-                <button onClick={() => handleNavClick('#vision')} className="hover:text-[#ccd5ae] transition-colors">
-                  Vision & Corporate Values
                 </button>
               </li>
               <li>

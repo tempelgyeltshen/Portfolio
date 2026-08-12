@@ -69,41 +69,41 @@ export default function App() {
         {/* 3. Group Introduction */}
         <GroupIntro />
 
-        {/* 4. Group Companies Editorial Showcase (01 - 07) */}
+        {/* 4. Long-term Vision & Corporate Values */}
+        <VisionValues />
+
+        {/* 5. Group Companies Editorial Showcase (01 - 07) */}
         <GroupCompanies onSelectCompany={(comp) => setSelectedCompany(comp)} />
 
-        {/* 5. High Quality Travelers Deep Dive */}
+        {/* 6. High Quality Travelers Deep Dive */}
         <TravelersSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 6. High Quality Thangka Painting Cultural Showcase */}
+        {/* 7. High Quality Thangka Painting Cultural Showcase */}
         <ThangkaSection onSelectArtwork={(art) => setSelectedThangka(art)} />
 
-        {/* 7. High Quality Trading Commercial Section */}
+        {/* 8. High Quality Trading Commercial Section */}
         <TradingSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 8. High Quality Car Rental Section */}
+        {/* 9. High Quality Car Rental Section */}
         <CarRentalSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 9. High Quality 24/7 Food & Service Section */}
+        {/* 10. High Quality 24/7 Food & Service Section */}
         <Food247Section />
 
-        {/* 10. High Quality Enterprise Section */}
+        {/* 11. High Quality Enterprise Section */}
         <EnterpriseSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 11. Hitokara Entertainment Section */}
+        {/* 12. Hitokara Entertainment Section */}
         <HitokaraSection />
 
-        {/* 12. Collective Strength Summary */}
+        {/* 13. Collective Strength Summary */}
         <CollectiveStrength onSelectCompany={(comp) => setSelectedCompany(comp)} />
 
-        {/* 13. Bhutan Presence & Interactive 20 Dzongkhags Explorer */}
+        {/* 14. Bhutan Presence & Interactive 20 Dzongkhags Explorer */}
         <BhutanPresence />
 
-        {/* 14. Why Work With Us */}
+        {/* 15. Why Work With Us */}
         <WhyUs />
-
-        {/* 15. Long-term Vision & Corporate Values */}
-        <VisionValues />
 
         {/* 16. Chairman's Closing Address */}
         <ChairmanClosing />

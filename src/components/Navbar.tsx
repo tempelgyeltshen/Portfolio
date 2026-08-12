@@ -26,9 +26,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenContact }) =
     { name: 'Home', href: '#hero' },
     { name: 'Chairman', href: '#chairman' },
     { name: 'Our Group', href: '#group-intro' },
+    { name: 'Vision & Values', href: '#vision' },
     { name: 'Businesses', href: '#businesses' },
     { name: 'Bhutan Presence', href: '#bhutan-presence' },
-    { name: 'Vision & Values', href: '#vision' },
     { name: 'Contact', href: '#contact' },
   ];
 
