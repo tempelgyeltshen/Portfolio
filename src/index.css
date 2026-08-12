@@ -1,4 +1,13 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-in,
+  .animate-out {
+    animation: none;
+  }
+}
 
 html {
   /* Keep anchored sections clear of the fixed header */
