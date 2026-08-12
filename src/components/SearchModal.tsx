@@ -44,25 +44,25 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
     : [];
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-start justify-center p-4 sm:p-6 pt-20 animate-in fade-in duration-200">
-      <div className="bg-white border border-[#d4a373]/40 rounded-sm max-w-2xl w-full p-6 space-y-6 relative shadow-2xl">
-        
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-start justify-center p-4 sm:p-6 pt-20 animate-in fade-in duration-300">
+      <div className="bg-white border border-[#8B6914]/40 rounded-sm max-w-2xl w-full p-6 space-y-6 relative shadow-2xl transition-all duration-300">
+
         {/* Search Header */}
         <div className="flex items-center justify-between border-b border-gray-200 pb-4">
           <div className="flex items-center space-x-3 w-full mr-4">
-            <Search className="w-5 h-5 text-[#ccd5ae]" />
+            <Search className="w-5 h-5 text-[#8B6914]" />
             <input
               type="text"
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search companies, destinations, dzongkhags, or corporate values..."
-              className="w-full bg-transparent text-sm text-[#1C1D21] placeholder-gray-400 focus:outline-none font-medium"
+              className="w-full bg-transparent text-sm text-[#2C2D31] placeholder-gray-400 focus:outline-none font-medium"
             />
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 text-[#5A5854] hover:text-[#1C1D21] rounded transition-colors"
+            className="p-1.5 text-[#4A4843] hover:text-[#2C2D31] rounded transition-all duration-300 hover:scale-110"
           >
             <X className="w-5 h-5" />
           </button>
@@ -74,7 +74,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           {/* Companies Section */}
           {matchingCompanies.length > 0 && (
             <div className="space-y-3">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#ccd5ae] block">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#8B6914] block">
                 GROUP COMPANIES ({matchingCompanies.length})
               </span>
               <div className="space-y-2">
@@ -85,20 +85,20 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
                       onClose();
                       onSelectCompany(comp);
                     }}
-                    className="p-3 bg-[#faedcd] hover:bg-gray-100 border border-gray-200 hover:border-[#d4a373]/40 rounded-sm cursor-pointer transition-all flex items-center justify-between group"
+                    className="p-3 bg-[#faedcd] hover:bg-gray-100 border border-gray-200 hover:border-[#8B6914]/40 rounded-sm cursor-pointer transition-all duration-300 flex items-center justify-between group hover:shadow-md"
                   >
                     <div className="flex items-center space-x-3">
-                      <div className="w-7 h-7 rounded bg-[#d4a373]/10 border border-[#d4a373]/30 flex items-center justify-center text-[#ccd5ae] font-serif font-bold text-xs shrink-0">
+                      <div className="w-7 h-7 rounded bg-[#8B6914]/10 border border-[#8B6914]/30 flex items-center justify-center text-[#8B6914] font-serif font-bold text-xs shrink-0">
                         {comp.number}
                       </div>
                       <div>
-                        <p className="text-sm font-serif font-bold text-[#1C1D21] group-hover:text-[#ccd5ae] transition-colors">
+                        <p className="text-sm font-serif font-bold text-[#2C2D31] group-hover:text-[#8B6914] transition-colors duration-300">
                           {comp.name}
                         </p>
-                        <p className="text-[11px] text-[#5A5854] font-medium">{comp.industry}</p>
+                        <p className="text-[11px] text-[#4A4843] font-medium">{comp.industry}</p>
                       </div>
                     </div>
-                    <ChevronRight className="w-4 h-4 text-[#8E8B85] group-hover:text-[#ccd5ae] group-hover:translate-x-1 transition-all" />
+                    <ChevronRight className="w-4 h-4 text-[#8E8B85] group-hover:text-[#8B6914] group-hover:translate-x-1 transition-all duration-300" />
                   </div>
                 ))}
               </div>
@@ -108,7 +108,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           {/* Destinations Section */}
           {matchingDestinations.length > 0 && (
             <div className="space-y-3">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#ccd5ae] block">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#8B6914] block">
                 KEY DESTINATIONS ({matchingDestinations.length})
               </span>
               <div className="space-y-2">
@@ -120,13 +120,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
                       const el = document.querySelector('#travelers-section');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="p-3 bg-[#faedcd] hover:bg-gray-100 border border-gray-200 rounded-sm cursor-pointer transition-all flex items-center justify-between"
+                    className="p-3 bg-[#faedcd] hover:bg-gray-100 border border-gray-200 rounded-sm cursor-pointer transition-all duration-300 flex items-center justify-between hover:shadow-md"
                   >
                     <div className="flex items-center space-x-3">
-                      <MapPin className="w-4 h-4 text-[#ccd5ae]" />
+                      <MapPin className="w-4 h-4 text-[#8B6914]" />
                       <div>
-                        <p className="text-sm font-serif font-bold text-[#1C1D21]">{dest.name}</p>
-                        <p className="text-[11px] text-[#5A5854] font-medium">{dest.title}</p>
+                        <p className="text-sm font-serif font-bold text-[#2C2D31]">{dest.name}</p>
+                        <p className="text-[11px] text-[#4A4843] font-medium">{dest.title}</p>
                       </div>
                     </div>
                     <ChevronRight className="w-4 h-4 text-[#8E8B85]" />
@@ -139,7 +139,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           {/* Dzongkhags Section */}
           {matchingDzongkhags.length > 0 && (
             <div className="space-y-3">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#ccd5ae] block">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#8B6914] block">
                 DZONGKHAGS ({matchingDzongkhags.length})
               </span>
               <div className="space-y-2">
@@ -151,13 +151,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
                       const el = document.querySelector('#bhutan-presence');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="p-3 bg-[#faedcd] border border-gray-200 rounded-sm flex items-center justify-between cursor-pointer"
+                    className="p-3 bg-[#faedcd] border border-gray-200 rounded-sm flex items-center justify-between cursor-pointer transition-all duration-300 hover:shadow-md"
                   >
                     <div>
-                      <p className="text-sm font-serif font-bold text-[#1C1D21]">{dz.name} Dzongkhag</p>
-                      <p className="text-[11px] text-[#5A5854] font-medium">{dz.region} Bhutan | Seat: {dz.capitalOrTown}</p>
+                      <p className="text-sm font-serif font-bold text-[#2C2D31]">{dz.name} Dzongkhag</p>
+                      <p className="text-[11px] text-[#4A4843] font-medium">{dz.region} Bhutan | Seat: {dz.capitalOrTown}</p>
                     </div>
-                    <span className="text-[10px] uppercase text-[#ccd5ae] font-semibold">{dz.isVerifiedLocation ? 'Group Hub' : 'Area Served'}</span>
+                    <span className="text-[10px] uppercase text-[#8B6914] font-semibold">{dz.isVerifiedLocation ? 'Group Hub' : 'Area Served'}</span>
                   </div>
                 ))}
               </div>
@@ -167,14 +167,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           {/* Values Section */}
           {matchingValues.length > 0 && (
             <div className="space-y-3">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#ccd5ae] block">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#8B6914] block">
                 CORPORATE VALUES ({matchingValues.length})
               </span>
               <div className="space-y-2">
                 {matchingValues.map((v) => (
-                  <div key={v.title} className="p-3 bg-[#faedcd] border border-gray-200 rounded-sm">
-                    <p className="text-sm font-serif font-bold text-[#1C1D21]">{v.title}</p>
-                    <p className="text-xs text-[#5A5854] font-normal">{v.shortDescription}</p>
+                  <div key={v.title} className="p-3 bg-[#faedcd] border border-gray-200 rounded-sm transition-all duration-300 hover:shadow-md">
+                    <p className="text-sm font-serif font-bold text-[#2C2D31]">{v.title}</p>
+                    <p className="text-xs text-[#4A4843] font-normal">{v.shortDescription}</p>
                   </div>
                 ))}
               </div>
@@ -182,7 +182,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           )}
 
           {q && matchingCompanies.length === 0 && matchingDestinations.length === 0 && matchingDzongkhags.length === 0 && matchingValues.length === 0 && (
-            <div className="text-center py-8 text-xs text-[#5A5854]">
+            <div className="text-center py-8 text-xs text-[#4A4843]">
               No results found for "{query}". Try searching "Tourism", "Thangka", "Thimphu", or "Integrity".
             </div>
           )}
