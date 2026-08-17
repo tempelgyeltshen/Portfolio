@@ -23,7 +23,7 @@ export const GroupCompanies: React.FC<GroupCompaniesProps> = ({ onSelectCompany 
             </h2>
           </div>
           <p className="text-sm text-[#4A4843] max-w-md font-normal mt-4 md:mt-0">
-            A luxury corporate showcase of High Quality Pvt. Ltd.'s specialized business divisions.
+            A luxury corporate showcase of High Quality Pvt. Ltd.'s specialized business divisions (01 - 07).
           </p>
         </div>
 

@@ -63,8 +63,56 @@ export const LEADERSHIP_PHILOSOPHY: LeadershipPillar[] = [
 
 export const GROUP_COMPANIES: CompanyItem[] = [
   {
-    id: 'travelers',
+    id: 'thangka',
     number: '01',
+    name: 'High Quality Thangka Painting',
+    subtitle: 'Preserving Bhutanese Artistic Heritage',
+    industry: 'Traditional Arts & Cultural Masterpieces',
+    description: 'Dedicated to preserving, promoting, and showcasing sacred Himalayan Thangka scroll artwork and traditional Bhutanese master craftsmanship.',
+    fullStory: 'Thangka painting is deeply connected with Himalayan Buddhist artistic traditions, requiring years of disciplined apprenticeship, mineral pigments, gold leafing, and precise iconographic geometry. High Quality Thangka Painting brings authentic Bhutanese sacred artwork to art collectors, spiritual seekers, and international visitors.',
+    highlights: [
+      'Authentic Sacred Thangka Scroll Paintings',
+      'Master Artisan Collaboration & Fine Craftsmanship',
+      'Preservation of Himalayan Sacred Geometry',
+      'Promoted presence in key hubs: Thimphu, Paro, Lobesa, Gangtey, Bumthang',
+      'Support for Bhutan\'s Creative & Cultural Economy'
+    ],
+    image: ASSETS.thangpainting1,
+    gallery: [
+      ASSETS.thangpainting1,
+      ASSETS.thangpainting2,
+      ASSETS.thangpainting3
+    ],
+    location: 'Thimphu, Paro, Lobesa, Gangtey, Bumthang',
+    tagline: 'A Sacred Bridge Between Heritage and Fine Art'
+  },
+  {
+    id: 'car-rental',
+    number: '02',
+    name: 'High Quality Car Rental',
+    subtitle: 'Mobility You Can Depend On',
+    industry: 'Transportation & Chauffeur Services',
+    description: 'Delivers reliable, high-standard vehicular mobility supporting tourism, institutional clients, corporate delegations, and local travel requirements across Bhutan.',
+    fullStory: 'Navigating Bhutan\'s mountain highways requires dependable vehicles and experienced drivers. High Quality Car Rental offers well-maintained fleets and professional chauffeur services under the leadership of President Pema Tshering, ensuring seamless travel across the country.',
+    highlights: [
+      'Chauffeur-Driven Executive & Visitor Travel',
+      'Airport Transfers (Paro Airport to All Districts)',
+      'Corporate & Delegation Transportation',
+      'Customized Long-Distance Travel Logistics',
+      'Headquartered in Thimphu, Servicing Nationwide'
+    ],
+    image: ASSETS.carental1,
+    gallery: [
+      ASSETS.carental1,
+      ASSETS.carental2,
+      ASSETS.carental3
+    ],
+    location: 'Thimphu, Bhutan',
+    tagline: 'Safety, Comfort, and Dependability on Bhutan Highways'
+  },
+  {
+    id: 'travelers',
+    number: '03',
     name: 'High Quality Travelers',
     subtitle: 'Discover Bhutan. Experience It Personally.',
     industry: 'Destination Management & Luxury Tourism',
@@ -89,70 +137,23 @@ export const GROUP_COMPANIES: CompanyItem[] = [
     tagline: 'Elevating Bhutanese Hospitality to Global Luxury Standards'
   },
   {
-    id: 'thangka',
-    number: '02',
-    name: 'High Quality Thangka Painting',
-    subtitle: 'Preserving Bhutanese Artistic Heritage',
-    industry: 'Traditional Arts & Cultural Masterpieces',
-    description: 'Dedicated to preserving, promoting, and showcasing sacred Himalayan Thangka scroll artwork and traditional Bhutanese master craftsmanship.',
-    fullStory: 'Thangka painting is deeply connected with Himalayan Buddhist artistic traditions, requiring years of disciplined apprenticeship, mineral pigments, gold leafing, and precise iconographic geometry. High Quality Thangka Painting brings authentic Bhutanese sacred artwork to art collectors, spiritual seekers, and international visitors.',
-    highlights: [
-      'Authentic Sacred Thangka Scroll Paintings',
-      'Master Artisan Collaboration & Fine Craftsmanship',
-      'Preservation of Himalayan Sacred Geometry',
-      'Promoted presence in key hubs: Thimphu, Paro, Lobesa, Gangtey, Bumthang',
-      'Support for Bhutan\'s Creative & Cultural Economy'
-    ],
-    image: ASSETS.thangpainting1,
-    gallery: [
-      ASSETS.thangpainting1,
-      ASSETS.thangpainting2,
-      ASSETS.thangpainting3
-    ],
-    location: 'Thimphu, Paro, Lobesa, Gangtey, Bumthang',
-    tagline: 'A Sacred Bridge Between Heritage and Fine Art'
-  },
-  {
-    id: 'trading',
-    number: '03',
-    name: 'High Quality Trading',
-    subtitle: 'Connecting Products, Markets and Opportunities',
-    industry: 'Commercial Sourcing & Distribution',
-    description: 'Forms part of the group\'s commercial interests, structured around reliable product sourcing, professional supply chain management, and long-term business partnerships.',
-    fullStory: 'High Quality Trading provides dependable product flow and commercial bridge capabilities within Bhutan and across regional trade connections. Guided by transparency, responsiveness, and supply consistency, the business supports various industries with verified product lines.',
-    highlights: [
-      'Reliable Product Sourcing & Quality Control',
-      'Professional Service & Transparent Logistics',
-      'Long-Term Commercial Partner Network',
-      'Commercial Bridge for B2B Supply Requirements'
-    ],
-    image: ASSETS.trading1,
-    location: 'Thimphu, Bhutan',
-    tagline: 'Dependable Commercial Bridge and Supply Excellence'
-  },
-  {
-    id: 'car-rental',
+    id: 'enterprise',
     number: '04',
-    name: 'High Quality Car Rental',
-    subtitle: 'Mobility You Can Depend On',
-    industry: 'Transportation & Chauffeur Services',
-    description: 'Delivers reliable, high-standard vehicular mobility supporting tourism, institutional clients, corporate delegations, and local travel requirements across Bhutan.',
-    fullStory: 'Navigating Bhutan\'s mountain highways requires dependable vehicles and experienced drivers. High Quality Car Rental offers well-maintained fleets and professional chauffeur services under the leadership of President Pema Tshering, ensuring seamless travel across the country.',
+    name: 'High Quality Enterprise',
+    subtitle: 'Business Solutions Built Around Opportunity',
+    industry: 'Commercial Development & Enterprise Solutions',
+    description: 'Serves as the group\'s broader enterprise development platform, identifying high-potential commercial ventures and fostering institutional relationships.',
+    fullStory: 'High Quality Enterprise expands the group\'s economic footprint beyond traditional sectors. Under the presidency of Mr. Pema Tshering, the enterprise focuses on sustainable value creation, responsible commercial investments, and strategic growth opportunities.',
     highlights: [
-      'Chauffeur-Driven Executive & Visitor Travel',
-      'Airport Transfers (Paro Airport to All Districts)',
-      'Corporate & Delegation Transportation',
-      'Customized Long-Distance Travel Logistics',
-      'Headquartered in Thimphu, Servicing Nationwide'
+      'Opportunity Identification & Venture Structuring',
+      'Institutional & Corporate Relationship Building',
+      'Professional Business Support & Consultation',
+      'Long-Term Value Creation Strategy'
     ],
-    image: ASSETS.carental1,
-    gallery: [
-      ASSETS.carental1,
-      ASSETS.carental2,
-      ASSETS.carental3
-    ],
+    image: ASSETS.enterprise1,
     location: 'Thimphu, Bhutan',
-    tagline: 'Safety, Comfort, and Dependability on Bhutan Highways'
+    contactEmail: 'pemsbumthap@gmail.com',
+    tagline: 'Strategic Innovation and Commercial Expansion'
   },
   {
     id: 'food-247',
@@ -173,27 +174,8 @@ export const GROUP_COMPANIES: CompanyItem[] = [
     tagline: 'Consistency, Hygiene, and Everyday Quality Food'
   },
   {
-    id: 'enterprise',
-    number: '06',
-    name: 'High Quality Enterprise',
-    subtitle: 'Business Solutions Built Around Opportunity',
-    industry: 'Commercial Development & Enterprise Solutions',
-    description: 'Serves as the group\'s broader enterprise development platform, identifying high-potential commercial ventures and fostering institutional relationships.',
-    fullStory: 'High Quality Enterprise expands the group\'s economic footprint beyond traditional sectors. Under the presidency of Mr. Pema Tshering, the enterprise focuses on sustainable value creation, responsible commercial investments, and strategic growth opportunities.',
-    highlights: [
-      'Opportunity Identification & Venture Structuring',
-      'Institutional & Corporate Relationship Building',
-      'Professional Business Support & Consultation',
-      'Long-Term Value Creation Strategy'
-    ],
-    image: ASSETS.enterprise1,
-    location: 'Thimphu, Bhutan',
-    contactEmail: 'pemsbumthap@gmail.com',
-    tagline: 'Strategic Innovation and Commercial Expansion'
-  },
-  {
     id: 'hitokara',
-    number: '07',
+    number: '06',
     name: 'Hitokara',
     subtitle: 'Entertainment, Music & Social Experiences',
     industry: 'Hospitality, Lounge & Nightlife',
@@ -212,6 +194,24 @@ export const GROUP_COMPANIES: CompanyItem[] = [
     ],
     location: 'Thimphu, Bhutan',
     tagline: 'Where Music, Hospitality, and Vibrant Social Life Meet'
+  },
+  {
+    id: 'trading',
+    number: '07',
+    name: 'High Quality Trading',
+    subtitle: 'Connecting Products, Markets and Opportunities',
+    industry: 'Commercial Sourcing & Distribution',
+    description: 'Forms part of the group\'s commercial interests, structured around reliable product sourcing, professional supply chain management, and long-term business partnerships.',
+    fullStory: 'High Quality Trading provides dependable product flow and commercial bridge capabilities within Bhutan and across regional trade connections. Guided by transparency, responsiveness, and supply consistency, the business supports various industries with verified product lines.',
+    highlights: [
+      'Reliable Product Sourcing & Quality Control',
+      'Professional Service & Transparent Logistics',
+      'Long-Term Commercial Partner Network',
+      'Commercial Bridge for B2B Supply Requirements'
+    ],
+    image: ASSETS.trading1,
+    location: 'Thimphu, Bhutan',
+    tagline: 'Dependable Commercial Bridge and Supply Excellence'
   }
 ];
 

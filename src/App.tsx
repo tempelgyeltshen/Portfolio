@@ -4,13 +4,13 @@ import { Hero } from './components/Hero';
 import { ChairmanSection } from './components/ChairmanSection';
 import { GroupIntro } from './components/GroupIntro';
 import { GroupCompanies } from './components/GroupCompanies';
-import { TravelersSection } from './components/TravelersSection';
 import { ThangkaSection } from './components/ThangkaSection';
-import { TradingSection } from './components/TradingSection';
 import { CarRentalSection } from './components/CarRentalSection';
-import { Food247Section } from './components/Food247Section';
+import { TravelersSection } from './components/TravelersSection';
 import { EnterpriseSection } from './components/EnterpriseSection';
+import { Food247Section } from './components/Food247Section';
 import { HitokaraSection } from './components/HitokaraSection';
+import { TradingSection } from './components/TradingSection';
 import { CollectiveStrength } from './components/CollectiveStrength';
 import { BhutanPresence } from './components/BhutanPresence';
 import { WhyUs } from './components/WhyUs';
@@ -75,26 +75,26 @@ export default function App() {
         {/* 5. Group Companies Editorial Showcase (01 - 07) */}
         <GroupCompanies onSelectCompany={(comp) => setSelectedCompany(comp)} />
 
-        {/* 6. High Quality Travelers Deep Dive */}
-        <TravelersSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 7. High Quality Thangka Painting Cultural Showcase */}
+        {/* 6. High Quality Thangka Painting Cultural Showcase (01) */}
         <ThangkaSection onSelectArtwork={(art) => setSelectedThangka(art)} />
 
-        {/* 8. High Quality Trading Commercial Section */}
-        <TradingSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 9. High Quality Car Rental Section */}
+        {/* 7. High Quality Car Rental Section (02) */}
         <CarRentalSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 10. High Quality 24/7 Food & Service Section */}
-        <Food247Section />
+        {/* 8. High Quality Travelers Deep Dive (03) */}
+        <TravelersSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 11. High Quality Enterprise Section */}
+        {/* 9. High Quality Enterprise Section (04) */}
         <EnterpriseSection onInquire={handleOpenContactWithSubject} />
 
-        {/* 12. Hitokara Entertainment Section */}
+        {/* 10. High Quality 24/7 Food & Service Section (05) */}
+        <Food247Section />
+
+        {/* 11. Hitokara Entertainment Section (06) */}
         <HitokaraSection />
+
+        {/* 12. High Quality Trading Commercial Section (07) */}
+        <TradingSection onInquire={handleOpenContactWithSubject} />
 
         {/* 13. Collective Strength Summary */}
         <CollectiveStrength onSelectCompany={(comp) => setSelectedCompany(comp)} />
