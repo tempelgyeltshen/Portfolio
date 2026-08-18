@@ -7,16 +7,16 @@ export const BhutanPresence: React.FC = () => {
   const [selectedDzongkhag, setSelectedDzongkhag] = useState<DzongkhagItem | null>(null);
 
   return (
-    <section id="bhutan-presence" className="py-24 bg-[#e9edc9] text-[#2C2D31] relative border-t border-gray-200 animate-fade-in">
+    <section id="bhutan-presence" className="py-24 gradient-section text-[#2C2D31] relative border-t border-[#C9A227]/20 animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-[#8B6914]/10 border border-[#8B6914]/30 text-xs uppercase tracking-[0.25em] text-[#8B6914] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#C9A227]/15 border border-[#C9A227]/40 text-xs uppercase tracking-[0.25em] text-[#C9A227] font-semibold animate-pulse-glow">
             <Globe className="w-3.5 h-3.5" />
             <span>GEOGRAPHIC FOOTPRINT</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-sm">
+          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-md">
             Bhutan Operational Regions
           </h2>
           <p className="text-sm text-[#4A4843] font-normal leading-relaxed max-w-2xl mx-auto pt-1">
@@ -25,8 +25,8 @@ export const BhutanPresence: React.FC = () => {
         </div>
 
         {/* Operational Status Distinction Legend */}
-        <div className="p-6 bg-[#faedcd] border-l-4 border-[#8B6914] border-y border-r border-gray-200 rounded-sm flex items-start space-x-4 shadow-sm mb-12">
-          <CheckCircle2 className="w-6 h-6 text-[#8B6914] shrink-0 mt-0.5" />
+        <div className="card-elevated p-6 border-l-4 border-[#C9A227] flex items-start space-x-4 mb-12">
+          <CheckCircle2 className="w-6 h-6 text-[#C9A227] shrink-0 mt-0.5" />
           <div>
             <h3 className="text-base font-serif font-bold text-[#2C2D31]">Group Core Locations</h3>
             <p className="text-xs text-[#4A4843] font-normal leading-relaxed mt-1">
@@ -41,19 +41,19 @@ export const BhutanPresence: React.FC = () => {
             <div
               key={dz.id}
               onClick={() => setSelectedDzongkhag(dz)}
-              className="p-5 bg-[#faedcd] rounded-sm border border-[#8B6914]/40 hover:border-[#8B6914] transition-all duration-300 cursor-pointer group hover:scale-[1.02] hover:shadow-md flex flex-col justify-between"
+              className="card-elevated p-5 cursor-pointer group hover:scale-[1.02] flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] uppercase tracking-widest text-[#8E8B85] font-semibold">
+                  <span className="text-[10px] uppercase tracking-widest text-[#8B8680] font-semibold">
                     {dz.region} Bhutan
                   </span>
-                  <span className="w-2 h-2 rounded-full bg-[#ccd5ae]" title="Verified Group Hub" />
+                  <span className="w-2 h-2 rounded-full bg-[#9CAF88] animate-pulse" title="Verified Group Hub" />
                 </div>
-                <h4 className="text-base font-serif font-bold text-[#2C2D31] group-hover:text-[#8B6914] transition-colors">
+                <h4 className="text-base font-serif font-bold text-[#2C2D31] group-hover:text-[#C9A227] transition-colors">
                   {dz.name}
                 </h4>
-                <p className="text-[11px] text-[#8B6914] font-medium mt-0.5">
+                <p className="text-[11px] text-[#C9A227] font-medium mt-0.5">
                   {dz.capitalOrTown}
                 </p>
                 <p className="text-xs text-[#4A4843] mt-2 line-clamp-2 font-normal leading-relaxed">
@@ -61,11 +61,11 @@ export const BhutanPresence: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-gray-200 flex items-center justify-between">
-                <span className="text-[10px] uppercase tracking-wider text-[#8B6914] font-semibold">
+              <div className="mt-4 pt-3 border-t border-[#C9A227]/20 flex items-center justify-between">
+                <span className="text-[10px] uppercase tracking-wider text-[#C9A227] font-semibold">
                   {dz.servicesAvailable.length} Services
                 </span>
-                <ChevronRight className="w-4 h-4 text-[#8E8B85] group-hover:text-[#8B6914] group-hover:translate-x-1 transition-all duration-300" />
+                <ChevronRight className="w-4 h-4 text-[#8B8680] group-hover:text-[#C9A227] group-hover:translate-x-1 transition-all duration-300" />
               </div>
             </div>
           ))}
@@ -76,30 +76,30 @@ export const BhutanPresence: React.FC = () => {
       {/* Detail Modal for Selected Region */}
       {selectedDzongkhag && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200">
-          <div className="bg-white border border-[#8B6914]/40 rounded-sm max-w-xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl my-8">
+          <div className="card-elevated max-w-xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl my-8">
             <button
               onClick={() => setSelectedDzongkhag(null)}
-              className="absolute top-4 right-4 p-2 text-[#4A4843] hover:text-[#2C2D31] bg-[#faedcd] rounded-full transition-colors border border-gray-200"
+              className="absolute top-4 right-4 p-2 text-[#4A4843] hover:text-[#2C2D31] glass rounded-full transition-colors border border-[#C9A227]/30"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
             </button>
 
-            <div className="relative aspect-video rounded-sm overflow-hidden border border-gray-200">
+            <div className="relative aspect-video rounded-sm overflow-hidden border border-[#C9A227]/20">
               <img
                 src={selectedDzongkhag.image}
                 alt={selectedDzongkhag.name}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded text-[10px] font-semibold uppercase tracking-wider text-[#8B6914] shadow-sm">
+              <div className="absolute top-3 left-3 glass px-3 py-1 rounded text-[10px] font-semibold uppercase tracking-wider text-[#C9A227] shadow-lg">
                 {selectedDzongkhag.region} Bhutan Region
               </div>
             </div>
 
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-[#8B6914]" />
-                <span className="text-xs uppercase tracking-widest text-[#8B6914] font-semibold">
+                <MapPin className="w-4 h-4 text-[#C9A227]" />
+                <span className="text-xs uppercase tracking-widest text-[#C9A227] font-semibold">
                   {selectedDzongkhag.capitalOrTown}
                 </span>
               </div>
@@ -111,15 +111,15 @@ export const BhutanPresence: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-3 pt-3 border-t border-gray-200">
-              <h5 className="text-xs uppercase tracking-widest font-semibold text-[#8A6B29]">
+            <div className="space-y-3 pt-3 border-t border-[#C9A227]/20">
+              <h5 className="text-xs uppercase tracking-widest font-semibold text-[#C9A227]">
                 Active Group Presence & Services
               </h5>
               <div className="flex flex-wrap gap-2">
                 {selectedDzongkhag.servicesAvailable.map((srv, idx) => (
                   <span
                     key={idx}
-                    className="px-2.5 py-1 text-xs bg-[#faedcd] text-[#2C2D31] border border-gray-200 rounded-sm font-medium"
+                    className="px-2.5 py-1 text-xs glass text-[#2C2D31] border border-[#C9A227]/30 rounded-sm font-medium"
                   >
                     {srv}
                   </span>
@@ -129,7 +129,7 @@ export const BhutanPresence: React.FC = () => {
 
             <button
               onClick={() => setSelectedDzongkhag(null)}
-              className="w-full py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#8B6914] transition-colors rounded-sm text-center shadow-md"
+              className="btn-primary w-full py-2.5 text-xs uppercase tracking-widest font-semibold rounded-sm text-center"
             >
               Close Region Profile
             </button>
