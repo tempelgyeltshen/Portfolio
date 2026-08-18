@@ -1,10 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BHUTAN_20_DZONGKHAGS } from '../data/groupData';
 import { DzongkhagItem } from '../types';
 import { MapPin, CheckCircle2, Globe, ChevronRight, X } from 'lucide-react';
 
 export const BhutanPresence: React.FC = () => {
   const [selectedDzongkhag, setSelectedDzongkhag] = useState<DzongkhagItem | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Preload all region images for instant transitions
+  useEffect(() => {
+    BHUTAN_20_DZONGKHAGS.forEach((dz) => {
+      const img = new Image();
+      img.src = dz.image;
+    });
+  }, []);
+
+  // Handle image loading in modal
+  useEffect(() => {
+    if (selectedDzongkhag) {
+      setImageLoaded(false);
+      const img = new Image();
+      img.onload = () => setImageLoaded(true);
+      img.src = selectedDzongkhag.image;
+    }
+  }, [selectedDzongkhag]);
 
   return (
     <section id="bhutan-presence" className="py-24 gradient-section text-[#2C2D31] relative border-t border-[#C9A227]/20 animate-fade-in">
@@ -86,10 +105,15 @@ export const BhutanPresence: React.FC = () => {
             </button>
 
             <div className="relative aspect-video rounded-sm overflow-hidden border border-[#C9A227]/20">
+              {!imageLoaded && (
+                <div className="absolute inset-0 bg-[#FAF7F2] flex items-center justify-center">
+                  <div className="w-8 h-8 border-2 border-[#C9A227] border-t-transparent rounded-full animate-spin"></div>
+                </div>
+              )}
               <img
                 src={selectedDzongkhag.image}
                 alt={selectedDzongkhag.name}
-                className="w-full h-full object-cover"
+                className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
               />
               <div className="absolute top-3 left-3 glass px-3 py-1 rounded text-[10px] font-semibold uppercase tracking-wider text-[#C9A227] shadow-lg">
                 {selectedDzongkhag.region} Bhutan Region

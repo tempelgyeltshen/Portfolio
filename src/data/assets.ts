@@ -36,15 +36,15 @@ export const ASSETS = {
   region_thimphu: '/assets/thimphu_region.jpg',
   region_paro: '/assets/region_paro.jpg',
   region_punakha: '/assets/region_punakha.png',
-  region_bumthang: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bumthang-Tal_in_Bhutan.jpg',
+  region_bumthang: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Lhodrak_Karchu_Monastery%2C_Bumthang_2021-10-24a.jpg',
   region_gangtey: '/assets/gangtey_region.jpg',
 } as const;
 
 /** Attribution for the externally hosted, Creative Commons images above. */
 export const EXTERNAL_IMAGE_CREDITS = [
   {
-    label: 'Bumthang Valley, Bhutan — Wikimedia Commons',
-    href: 'https://commons.wikimedia.org/wiki/Category:Views_of_Bumthang',
+    label: 'Lhodrak Karchu Monastery, Bumthang — Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Lhodrak_Karchu_Monastery,_Bumthang_2021-10-24a.jpg',
   },
 ] as const;
 

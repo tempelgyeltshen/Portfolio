@@ -247,9 +247,9 @@ export const KEY_DESTINATIONS: DestinationItem[] = [
     id: 'bumthang',
     name: 'BUMTHANG',
     title: 'Spiritual Heartland & Sacred Temples',
-    description: 'One of Bhutan\'s most culturally and spiritually significant regions, Bumthang is home to ancient temples, monasteries, sacred sites, and traditional artisans.',
+    description: 'One of Bhutan\'s most culturally and spiritually significant regions, Bumthang is home to ancient temples, monasteries, sacred sites, and traditional artisans. The region features the sacred Jambay Lhakhang, Kurjey Lhakhang, and the magnificent Lhodrak Karchu Monastery.',
     image: ASSETS.region_bumthang,
-    highlights: ['Jambay Lhakhang', 'Kurjey Lhakhang', 'Mebar Tsho (Burning Lake)', 'Traditional Weaving & Cheese Artisans'],
+    highlights: ['Jambay Lhakhang (7th Century)', 'Kurjey Lhakhang', 'Lhodrak Karchu Monastery', 'Mebar Tsho (Burning Lake)', 'Traditional Weaving & Cheese Artisans'],
     category: 'Spiritual Heart'
   },
   {
@@ -267,7 +267,7 @@ export const BHUTAN_20_DZONGKHAGS: DzongkhagItem[] = [
   { id: 'thimphu', name: 'Thimphu', region: 'Western', capitalOrTown: 'Thimphu — Main Capital & Business Center', isVerifiedLocation: true, servicesAvailable: ['High Quality Group HQ', 'High Quality Travelers', 'Thangka Painting Gallery', 'Car Rental Fleet', 'Enterprise HQ', 'Hitokara Lounge', 'High Quality 24/7'], image: ASSETS.region_thimphu, description: 'Main capital district & central business hub housing government, group corporate headquarters, and commercial operations.' },
   { id: 'paro', name: 'Paro', region: 'Western', capitalOrTown: 'Paro Town', isVerifiedLocation: true, servicesAvailable: ['High Quality Travelers Airport Service', 'Thangka Gallery', 'Chauffeur Transfers'], image: ASSETS.region_paro, description: 'Gateway to Bhutan, renowned for Taktsang Monastery, Paro Airport, and scenic valley landscapes.' },
   { id: 'punakha', name: 'Punakha', region: 'Western', capitalOrTown: 'Punakha / Lobesa', isVerifiedLocation: true, servicesAvailable: ['High Quality Travelers Circuit', 'Thangka Exhibition (Lobesa)', 'Cultural Tours'], image: ASSETS.region_punakha, description: 'Historic ancient capital famous for Punakha Dzong and subtropical fertile river valleys.' },
-  { id: 'bumthang', name: 'Bumthang', region: 'Central', capitalOrTown: 'Jakar', isVerifiedLocation: true, servicesAvailable: ['High Quality Travelers Heritage Circuit', 'Thangka Art Center', 'Bespoke Overland Journeys'], image: ASSETS.region_bumthang, description: 'Spiritual heartland containing Bhutan\'s oldest sacred temples and legendary valley heritage.' },
+  { id: 'bumthang', name: 'Bumthang', region: 'Central', capitalOrTown: 'Jakar', isVerifiedLocation: true, servicesAvailable: ['High Quality Travelers Heritage Circuit', 'Thangka Art Center', 'Bespoke Overland Journeys', 'Lhodrak Karchu Monastery Tours'], image: ASSETS.region_bumthang, description: 'Spiritual heartland containing Bhutan\'s oldest sacred temples, including Jambay Lhakhang, Kurjey Lhakhang, and Lhodrak Karchu Monastery.' },
   { id: 'gangtey', name: 'Gangtey (Phobjikha Valley)', region: 'Western', capitalOrTown: 'Gangtey / Phobjikha', isVerifiedLocation: true, servicesAvailable: ['Gangtey Tourism Circuit', 'Thangka Art Display', 'Trekking Routes'], image: ASSETS.region_gangtey, description: 'Home to Gangtey Monastery and Phobjikha glacial valley habitat for rare black-necked cranes.' }
 ];
 
