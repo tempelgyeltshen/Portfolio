@@ -20,7 +20,7 @@ export const VenturesSection: React.FC = () => {
 
   return (
     <section id="ventures" className="relative bg-[#09090b] text-[#f4f4f5] py-28 sm:py-36 overflow-hidden">
-      <BhutaneseTextileBackground variant="dark" opacity={0.03} />
+      <BhutaneseTextileBackground variant="dark" opacity={0.06} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">

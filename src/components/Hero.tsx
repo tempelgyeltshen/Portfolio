@@ -10,7 +10,7 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout }) => {
   return (
     <section id="hero" className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] flex items-center overflow-hidden">
-      <BhutaneseTextileBackground variant="dark" opacity={0.03} />
+      <BhutaneseTextileBackground variant="dark" opacity={0.06} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
@@ -61,7 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout })
 
           {/* Right: Portrait */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[380px]">
+            <div className="relative w-full max-w-[520px]">
               <img
                 src={PRESIDENT_INFO.portraitImage}
                 alt={PRESIDENT_INFO.portraitAlt}

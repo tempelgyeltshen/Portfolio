@@ -5,7 +5,7 @@ export const BhutaneseTextileBackground: React.FC<{
   opacity?: number;
 }> = ({ variant = 'dark', opacity }) => {
   const strokeColor = variant === 'dark' ? '#C5A059' : '#8A7347';
-  const effectiveOpacity = opacity !== undefined ? opacity : variant === 'dark' ? 0.03 : 0.025;
+  const effectiveOpacity = opacity !== undefined ? opacity : variant === 'dark' ? 0.06 : 0.05;
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
