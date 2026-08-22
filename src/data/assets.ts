@@ -30,7 +30,7 @@ export const ASSETS = {
 
   // Leadership
   chairman_pema_tshering: '/assets/chairman_pema_tshering.png',
-  ceo_pic: '/assets/ceo__2_-removebg-preview.png',
+  ceo_pic: '/assets/ceo.png',
 
   // Core 5 Bhutan Operational Regions
   region_thimphu: '/assets/thimphu_region.jpg',
