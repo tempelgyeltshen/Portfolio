@@ -59,37 +59,26 @@ export const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-20 pt-16 border-t border-[#E4E4E7] grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
-          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
-            <div className="flex items-center justify-between">
-              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">01</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Economic Core</span>
-            </div>
+        <div className="mt-20 pt-16 border-t border-[#E4E4E7] grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-3">
+            <span className="font-serif-luxury text-2xl font-semibold text-[#8A7347]">01</span>
             <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">National Self-Reliance</h3>
-            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
-              Developing home-grown, value-additive enterprises that reduce import dependency, secure strategic supply chains, and retain capital within Bhutan.
+            <p className="text-sm text-[#52525B] leading-relaxed">
+              Developing home-grown enterprises that reduce import dependency and retain capital within Bhutan.
             </p>
           </div>
-
-          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
-            <div className="flex items-center justify-between">
-              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">02</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Ethical Standard</span>
-            </div>
-            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Gross National Happiness in Enterprise</h3>
-            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
-              Demonstrating that commercial profitability and ecological balance are mutually reinforcing. Every portfolio company upholds community equity and sustainable practices.
+          <div className="space-y-3">
+            <span className="font-serif-luxury text-2xl font-semibold text-[#8A7347]">02</span>
+            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Gross National Happiness</h3>
+            <p className="text-sm text-[#52525B] leading-relaxed">
+              Demonstrating that commercial profitability and ecological balance are mutually reinforcing.
             </p>
           </div>
-
-          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
-            <div className="flex items-center justify-between">
-              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">03</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Global Gateway</span>
-            </div>
-            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Sovereign Global Integration</h3>
-            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
-              Bridging international capital, frontier technologies, and global luxury markets with the Kingdom and pristine terroir and ancient culture.
+          <div className="space-y-3">
+            <span className="font-serif-luxury text-2xl font-semibold text-[#8A7347]">03</span>
+            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Global Integration</h3>
+            <p className="text-sm text-[#52525B] leading-relaxed">
+              Bridging international markets with the Kingdom&apos;s pristine terroir and ancient culture.
             </p>
           </div>
         </div>

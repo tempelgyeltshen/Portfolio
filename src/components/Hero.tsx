@@ -1,7 +1,7 @@
 import React from 'react';
 import { PRESIDENT_INFO, CHAIRMAN_INFO } from '../data/groupData';
 import { ChevronRight } from 'lucide-react';
-import { BhutaneseTextileBackground, CornerAccents } from './BhutaneseMotifs';
+import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 
 interface HeroProps {
   onExploreVentures: () => void;
@@ -14,12 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout })
       id="hero"
       className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] pt-32 pb-20 lg:pt-40 lg:pb-28 flex items-center overflow-hidden"
     >
-      <BhutaneseTextileBackground variant="dark" opacity={0.06} />
-
-      <div
-        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#C5A059]/5 rounded-full blur-[140px] pointer-events-none"
-        aria-hidden="true"
-      />
+      <BhutaneseTextileBackground variant="dark" opacity={0.04} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -78,23 +73,17 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout })
 
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[420px]">
-              <div className="relative p-2.5 sm:p-3.5 border border-[#C5A059]/30 bg-[#121214]/60 shadow-2xl">
-                <CornerAccents />
-
-                <div className="relative aspect-[3/4] overflow-hidden bg-[#000000]">
+              <div className="relative">
+                <div className="relative aspect-[3/4] overflow-hidden">
                   <img
                     src={PRESIDENT_INFO.portraitImage}
                     alt={PRESIDENT_INFO.portraitAlt}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover object-top grayscale contrast-[1.08] brightness-[0.98] transition-transform duration-700 hover:scale-[1.02]"
-                  />
-                  <div
-                    className="absolute inset-0 bg-gradient-to-t from-[#09090b]/90 via-transparent to-transparent pointer-events-none"
-                    aria-hidden="true"
+                    className="w-full h-full object-contain object-top transition-transform duration-700 hover:scale-[1.02]"
                   />
                 </div>
 
-                <div className="mt-3 flex items-center justify-between px-2 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]">
+                <div className="mt-4 flex items-center justify-between px-1 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]">
                   <span className="text-[#C5A059] font-medium">{CHAIRMAN_INFO.name}</span>
                   <span className="text-[#71717A]">THIMPHU &bull; BHUTAN</span>
                 </div>

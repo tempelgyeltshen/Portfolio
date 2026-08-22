@@ -54,18 +54,14 @@ export const ExperienceSection: React.FC = () => {
             <div key={item.id} className="p-8 bg-[#121214]/90 border border-[#27272a] hover:border-[#C5A059]/50 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               <div className="lg:col-span-3 space-y-2">
                 <span className="font-serif-luxury text-xl sm:text-2xl font-medium text-[#E8D4A2]">{item.year}</span>
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] uppercase tracking-[0.2em] px-2 py-0.5 border border-[#3f3f46] text-[#A1A1AA]">{item.category}</span>
-                  <span className="text-[11px] text-[#71717A]">{item.location}</span>
-                </div>
+                <span className="text-[11px] text-[#71717A] block">{item.location}</span>
               </div>
-              <div className="lg:col-span-4 space-y-1">
+              <div className="lg:col-span-5 space-y-1">
                 <h3 className="font-serif-luxury text-xl sm:text-2xl font-medium text-[#FAF9F6]">{item.title}</h3>
                 <p className="text-xs uppercase tracking-[0.16em] text-[#C5A059] font-medium">{item.organization}</p>
                 <p className="text-xs text-[#A1A1AA] pt-2 font-light leading-relaxed">{item.description}</p>
               </div>
-              <div className="lg:col-span-5 space-y-2 lg:pl-6 lg:border-l lg:border-[#27272a]">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-[#71717A] font-semibold">Key Accomplishments</p>
+              <div className="lg:col-span-4 space-y-2 lg:pl-6 lg:border-l lg:border-[#27272a]">
                 <ul className="space-y-2">
                   {item.accomplishments.map((acc, idx) => (
                     <li key={idx} className="flex items-start gap-2.5 text-xs text-[#D4D4D8]">
