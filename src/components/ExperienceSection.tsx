@@ -30,7 +30,7 @@ const MILESTONES: Milestone[] = [
 
 export const ExperienceSection: React.FC = () => {
   return (
-    <section id="experience" className="relative py-16 sm:py-24 bg-white">
+    <section id="experience" className="relative py-16 sm:py-24 bg-gray-50">
       {/* Subtle Bhutanese pattern */}
       <div className="absolute inset-0 bhutan-pattern pointer-events-none"></div>
 
@@ -62,7 +62,7 @@ export const ExperienceSection: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 premium-card p-6">
+                <div className="flex-1 bg-white border border-gray-200 p-6 hover:border-[#C9A227] transition-colors duration-300">
                   <h3 className="text-xl font-serif font-bold text-black mb-1">
                     {milestone.title}
                   </h3>
@@ -80,7 +80,7 @@ export const ExperienceSection: React.FC = () => {
           {/* Leadership Note */}
           <div className="mt-12 pt-8 border-t border-gray-200">
             <div className="text-center">
-              <p className="text-gray-800 text-lg leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-800 text-lg leading-relaxed max-w-2xl mx-auto font-light">
                 Throughout my career, I have focused on building businesses that create meaningful employment, develop talent, support local enterprise, and connect Bhutan with the international community.
               </p>
             </div>

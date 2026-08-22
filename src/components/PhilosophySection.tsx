@@ -30,14 +30,14 @@ const PHILOSOPHY_ITEMS: PhilosophyItem[] = [
 
 export const PhilosophySection: React.FC = () => {
   return (
-    <section id="philosophy" className="relative py-16 sm:py-24 bg-gray-50">
+    <section id="philosophy" className="relative py-16 sm:py-24 bg-black">
       {/* Subtle Bhutanese pattern */}
-      <div className="absolute inset-0 bhutan-pattern-subtle pointer-events-none"></div>
+      <div className="absolute inset-0 bhutan-pattern-subtle pointer-events-none opacity-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-serif font-bold text-black mb-4">
+          <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white mb-4">
             Philosophy
           </h2>
           <div className="flex items-center justify-center space-x-4">
@@ -55,7 +55,7 @@ export const PhilosophySection: React.FC = () => {
             {PHILOSOPHY_ITEMS.map((item, index) => (
               <div
                 key={index}
-                className="premium-card p-8"
+                className="bg-white border border-gray-800 p-8 hover:border-[#C9A227] transition-colors duration-300"
               >
                 {/* Number */}
                 <div className="text-xs uppercase tracking-[0.3em] text-[#C9A227] font-semibold mb-4">
@@ -68,7 +68,7 @@ export const PhilosophySection: React.FC = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed font-light">
                   {item.description}
                 </p>
               </div>
@@ -77,8 +77,8 @@ export const PhilosophySection: React.FC = () => {
 
           {/* Summary Statement */}
           <div className="mt-12 text-center">
-            <div className="premium-card p-8 max-w-3xl mx-auto">
-              <p className="text-gray-800 text-lg leading-relaxed">
+            <div className="bg-white border border-gray-800 p-8 max-w-3xl mx-auto">
+              <p className="text-gray-800 text-lg leading-relaxed font-light italic">
                 "For us, business is a journey of continuous improvement. We believe in creating opportunities where people, ideas, and businesses can grow together. We believe in delivering excellence through professionalism and attention to detail. And we believe that the strongest businesses are built on relationships that last."
               </p>
             </div>

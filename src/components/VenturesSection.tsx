@@ -1,6 +1,7 @@
 import React from 'react';
 import { GROUP_COMPANIES } from '../data/groupData';
 import { CompanyItem } from '../types';
+import { ArrowRight } from 'lucide-react';
 
 interface VenturesSectionProps {
   onSelectCompany: (company: CompanyItem) => void;
@@ -8,14 +9,14 @@ interface VenturesSectionProps {
 
 export const VenturesSection: React.FC<VenturesSectionProps> = ({ onSelectCompany }) => {
   return (
-    <section id="ventures" className="relative py-16 sm:py-24 bg-gray-50">
+    <section id="ventures" className="relative py-16 sm:py-24 bg-black">
       {/* Subtle Bhutanese pattern */}
-      <div className="absolute inset-0 bhutan-pattern-subtle pointer-events-none"></div>
+      <div className="absolute inset-0 bhutan-pattern-subtle pointer-events-none opacity-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-serif font-bold text-black mb-4">
+          <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white mb-4">
             Ventures
           </h2>
           <div className="flex items-center justify-center space-x-4">
@@ -32,7 +33,7 @@ export const VenturesSection: React.FC<VenturesSectionProps> = ({ onSelectCompan
           {GROUP_COMPANIES.map((company) => (
             <div
               key={company.id}
-              className="premium-card p-8 cursor-pointer group relative"
+              className="bg-white border border-gray-800 p-8 cursor-pointer group relative hover:border-[#C9A227] transition-all duration-300"
               onClick={() => onSelectCompany(company)}
             >
               {/* Company Number */}
@@ -63,8 +64,9 @@ export const VenturesSection: React.FC<VenturesSectionProps> = ({ onSelectCompan
               </p>
 
               {/* Location */}
-              <div className="flex items-center text-xs text-gray-500">
+              <div className="flex items-center justify-between text-xs text-gray-500">
                 <span className="uppercase tracking-[0.1em]">{company.location}</span>
+                <ArrowRight className="w-4 h-4 text-[#C9A227] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </div>
           ))}

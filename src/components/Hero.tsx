@@ -31,9 +31,25 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures }) => {
             </div>
 
             {/* Professional Statement */}
-            <p className="text-base sm:text-lg text-gray-800 max-w-2xl font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-800 max-w-2xl font-normal leading-relaxed font-light">
               Building sustainable businesses across Bhutan's tourism, transportation, traditional arts, and commercial sectors. Creating opportunities that develop people, strengthen communities, and contribute meaningfully to economic growth.
             </p>
+
+            {/* Stats/Quick Info */}
+            <div className="pt-6 flex flex-wrap gap-8">
+              <div>
+                <div className="text-3xl font-serif font-bold text-black">7+</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Companies</div>
+              </div>
+              <div>
+                <div className="text-3xl font-serif font-bold text-black">20+</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Years</div>
+              </div>
+              <div>
+                <div className="text-3xl font-serif font-bold text-black">5</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Sectors</div>
+              </div>
+            </div>
 
             {/* CTA Button */}
             <div className="pt-4">
