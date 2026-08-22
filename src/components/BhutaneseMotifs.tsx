@@ -99,40 +99,12 @@ export const BrandMonogram: React.FC<{ className?: string; size?: number }> = ({
   size = 38,
 }) => (
   <div className={`flex items-center gap-2.5 ${className}`}>
-    <div className="relative flex items-center justify-center">
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 44 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-[#C5A059] transition-transform duration-300 group-hover:scale-105"
-      >
-        <rect
-          x="22"
-          y="3"
-          width="26.8"
-          height="26.8"
-          transform="rotate(45 22 3)"
-          stroke="#C5A059"
-          strokeWidth="1.2"
-          fill="none"
-        />
-        <path
-          d="M22 8L36 22L22 36L8 22Z"
-          stroke="#C5A059"
-          strokeWidth="0.8"
-          strokeDasharray="2 2"
-          fill="none"
-        />
-        <path
-          d="M17 17L27 27M27 17L17 27"
-          stroke="#C5A059"
-          strokeWidth="1"
-          strokeLinecap="round"
-        />
-      </svg>
-    </div>
+    <img
+      src="/assets/Logo.png"
+      alt="Pema's High Quality Group"
+      className="transition-transform duration-300 group-hover:scale-105"
+      style={{ width: size, height: size, objectFit: 'contain' }}
+    />
     <div className="flex items-baseline">
       <span className="text-[10px] tracking-[0.15em] font-normal text-gray-500 lowercase">pema's</span>
       <span className="font-display-luxury text-lg sm:text-xl tracking-[0.18em] font-semibold text-[#E8D4A2] ml-1">HQG</span>
