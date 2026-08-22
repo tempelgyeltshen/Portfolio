@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-[#09090b]/95 backdrop-blur-md border-b border-[#C5A059]/10 py-4' : 'bg-transparent py-6 sm:py-8'}`}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         <a href="#hero" onClick={(e) => { e.preventDefault(); scrollTo('hero'); }} className="group focus:outline-none">
-          <BrandMonogram size={56} />
+          <BrandMonogram size={64} />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">

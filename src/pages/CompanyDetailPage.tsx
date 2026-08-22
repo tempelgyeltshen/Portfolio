@@ -75,7 +75,7 @@ export const CompanyDetailPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-[#A1A1AA] hover:text-[#C5A059] transition-colors">
             <ArrowLeft className="w-4 h-4" />
-            <BrandMonogram size={44} />
+            <BrandMonogram size={52} />
           </Link>
           <span className="text-[10px] font-mono tracking-widest text-[#52525B]">{company.number}</span>
         </div>
@@ -250,7 +250,7 @@ export const CompanyDetailPage: React.FC = () => {
       <footer className="relative bg-[#050507] text-[#71717A] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <BrandMonogram size={48} />
+            <BrandMonogram size={56} />
             <div className="flex items-center gap-6">
               <Link to="/" className="text-xs text-[#71717A] hover:text-[#C5A059] transition-colors">Home</Link>
               <span className="text-[#27272a]">|</span>

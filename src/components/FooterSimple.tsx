@@ -29,7 +29,7 @@ export const FooterSimple: React.FC = () => {
 
           {/* Left: Brand */}
           <div className="md:col-span-4 space-y-6">
-            <BrandMonogram size={56} />
+            <BrandMonogram size={64} />
             <p className="text-xs text-[#52525B] leading-relaxed max-w-xs">
               A diversified Bhutanese business group across tourism, transportation, traditional arts, food, and entertainment.
             </p>
