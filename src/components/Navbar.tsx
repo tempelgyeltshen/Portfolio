@@ -17,7 +17,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     { id: 'ventures', label: 'VENTURES' },
     { id: 'experience', label: 'EXPERIENCE' },
     { id: 'vision', label: 'VISION' },
-    { id: 'contact', label: 'CONTACT' },
   ];
 
   useEffect(() => {
