@@ -83,7 +83,7 @@ export const CompanyDetailPage: React.FC = () => {
 
       {/* Hero */}
       <div className="relative pt-20">
-        <div className="relative aspect-[16/9] max-h-[500px] overflow-hidden">
+        <div className="relative aspect-[16/9] max-h-[300px] sm:max-h-[400px] lg:max-h-[500px] overflow-hidden">
           <img src={company.image} alt={company.name} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-16">

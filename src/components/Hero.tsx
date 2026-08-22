@@ -61,14 +61,15 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout })
 
           {/* Right: Portrait */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[520px]">
+            <div className="relative w-full max-w-[280px] sm:max-w-[360px] md:max-w-[420px] lg:max-w-[520px]">
               <img
                 src={PRESIDENT_INFO.portraitImage}
                 alt={PRESIDENT_INFO.portraitAlt}
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-contain"
+                loading="eager"
               />
-              <div className="mt-6 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-[#71717A]">
+              <div className="mt-4 sm:mt-6 flex items-center justify-between text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-[#71717A]">
                 <span className="text-[#C5A059]">{CHAIRMAN_INFO.name}</span>
                 <span>Thimphu, Bhutan</span>
               </div>
