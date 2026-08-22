@@ -68,8 +68,8 @@ export const VenturesSection: React.FC = () => {
 
         <div className="mt-16 p-8 bg-[#121214] border border-[#27272a] flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="font-serif-luxury text-lg text-[#FAF9F6]">Partnership &amp; Investment Opportunities</h4>
-            <p className="text-xs text-[#A1A1AA]">Open to strategic partners, investors, and institutional collaborators.</p>
+            <h4 className="font-serif-luxury text-lg text-[#FAF9F6]">Travel, Tourism &amp; Business Opportunities</h4>
+            <p className="text-xs text-[#A1A1AA]">Serving tourists, travelers, corporate clients, and strategic partners worldwide.</p>
           </div>
           <button className="px-6 py-2.5 text-xs uppercase tracking-[0.2em] font-medium text-[#C5A059] border border-[#C5A059]/60 hover:bg-[#C5A059]/10 transition-colors shrink-0 cursor-pointer">REQUEST INFORMATION &rarr;</button>
         </div>

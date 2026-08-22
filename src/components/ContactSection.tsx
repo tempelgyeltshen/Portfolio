@@ -57,9 +57,9 @@ export const ContactModal: React.FC<{
         ) : (
           <div>
             <div className="border-b border-[#27272a] pb-6 mb-6">
-              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] font-semibold text-[#C5A059] mb-1"><span>EXECUTIVE INQUIRY</span></div>
+              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] font-semibold text-[#C5A059] mb-1"><span>GET IN TOUCH</span></div>
               <h3 className="font-serif-luxury text-2xl sm:text-3xl font-medium text-[#FAF9F6]">Initiate a Conversation</h3>
-              <p className="text-xs text-[#A1A1AA] mt-1 font-light">Direct engagement for partnerships, investments, and business inquiries.</p>
+              <p className="text-xs text-[#A1A1AA] mt-1 font-light">For tourists, travelers, car rental inquiries, tour packages, and business partnerships worldwide.</p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -68,7 +68,7 @@ export const ContactModal: React.FC<{
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1"><label className="text-[10px] uppercase tracking-[0.18em] text-[#A1A1AA] font-medium">Organization</label><input type="text" value={formData.organization} onChange={e => setFormData({...formData, organization: e.target.value})} placeholder="Organization Name" className="w-full bg-[#18181B] border border-[#27272a] focus:border-[#C5A059] px-3.5 py-2.5 text-xs text-[#FAF9F6] outline-none transition-colors" /></div>
-                <div className="space-y-1"><label className="text-[10px] uppercase tracking-[0.18em] text-[#A1A1AA] font-medium">Inquiry Type</label><select value={formData.inquiryType} onChange={e => setFormData({...formData, inquiryType: e.target.value})} className="w-full bg-[#18181B] border border-[#27272a] focus:border-[#C5A059] px-3 py-2.5 text-xs text-[#FAF9F6] outline-none transition-colors"><option>Business Inquiry</option><option>Partnership</option><option>Investment</option><option>General</option></select></div>
+                <div className="space-y-1"><label className="text-[10px] uppercase tracking-[0.18em] text-[#A1A1AA] font-medium">Inquiry Type</label><select value={formData.inquiryType} onChange={e => setFormData({...formData, inquiryType: e.target.value})} className="w-full bg-[#18181B] border border-[#27272a] focus:border-[#C5A059] px-3 py-2.5 text-xs text-[#FAF9F6] outline-none transition-colors"><option>Car Rental Inquiry</option><option>Tour Package / Travel</option><option>Business Partnership</option><option>General Inquiry</option></select></div>
               </div>
               <div className="space-y-1"><label className="text-[10px] uppercase tracking-[0.18em] text-[#A1A1AA] font-medium">Message *</label><textarea required rows={4} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} placeholder="Your inquiry..." className="w-full bg-[#18181B] border border-[#27272a] focus:border-[#C5A059] px-3.5 py-2.5 text-xs text-[#FAF9F6] outline-none transition-colors resize-none" /></div>
               <div className="pt-3 flex items-center justify-between">
@@ -91,12 +91,12 @@ export const ContactSection: React.FC<{ onOpenContactModal: () => void }> = ({ o
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3"><span className="text-xs uppercase tracking-[0.26em] font-semibold text-[#C5A059]">GET IN TOUCH</span><span className="h-[1px] w-10 bg-[#C5A059]/60" /></div>
-            <h2 id="contact-headline" className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F6] leading-[1.15]">Let&apos;s Build<br />the Future Together.</h2>
+            <h2 id="contact-headline" className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F6] leading-[1.15]">Plan Your Journey<br />to Bhutan.</h2>
           </div>
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3.5 text-xs sm:text-sm text-[#D4D4D8]"><div className="p-2 border border-[#27272a] text-[#C5A059] shrink-0"><Mail className="w-4 h-4" /></div><div><p className="text-[10px] uppercase tracking-[0.16em] text-[#71717A]">Email</p><a href={`mailto:${CHAIRMAN_INFO.email}`} className="hover:text-[#C5A059] transition-colors font-mono">{CHAIRMAN_INFO.email}</a></div></div>
             <div className="flex items-center gap-3.5 text-xs sm:text-sm text-[#D4D4D8]"><div className="p-2 border border-[#27272a] text-[#C5A059] shrink-0"><Phone className="w-4 h-4" /></div><div><p className="text-[10px] uppercase tracking-[0.16em] text-[#71717A]">Phone</p><a href={`tel:${CHAIRMAN_INFO.phone}`} className="hover:text-[#C5A059] transition-colors font-mono">{CHAIRMAN_INFO.phone}</a></div></div>
-            <div className="flex items-center gap-3.5 text-xs sm:text-sm text-[#D4D4D8]"><div className="p-2 border border-[#27272a] text-[#C5A059] shrink-0"><MapPin className="w-4 h-4" /></div><div><p className="text-[10px] uppercase tracking-[0.16em] text-[#71717A]">Headquarters</p><span className="text-[#A1A1AA]">Thimphu, Kingdom of Bhutan</span></div></div>
+            <div className="flex items-center gap-3.5 text-xs sm:text-sm text-[#D4D4D8]"><div className="p-2 border border-[#27272a] text-[#C5A059] shrink-0"><MapPin className="w-4 h-4" /></div><div><p className="text-[10px] uppercase tracking-[0.16em] text-[#71717A]">Worldwide Service</p><span className="text-[#A1A1AA]">Thimphu, Bhutan &mdash; Serving Global Travelers</span></div></div>
           </div>
           <div className="lg:col-span-3 flex justify-start lg:justify-end">
             <button onClick={onOpenContactModal} className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent border border-[#C5A059] text-xs font-medium uppercase tracking-[0.2em] text-[#C5A059] hover:bg-[#C5A059] hover:text-[#09090b] transition-all duration-300 shadow-sm cursor-pointer"><span>START A CONVERSATION</span><svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></button>
