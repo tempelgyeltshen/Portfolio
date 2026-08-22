@@ -50,18 +50,58 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures }) => {
           {/* RIGHT COLUMN: Portrait */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Main Portrait Container */}
+              {/* Main Portrait Container with Bhutanese Pattern Background */}
               <div className="relative premium-card overflow-hidden">
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
+                {/* Bhutanese Pattern Background */}
+                <div className="absolute inset-0 bg-black">
+                  <div className="absolute inset-0 opacity-30" style={{
+                    backgroundImage: `
+                      linear-gradient(45deg, #C9A227 25%, transparent 25%),
+                      linear-gradient(-45deg, #C9A227 25%, transparent 25%),
+                      linear-gradient(135deg, #C9A227 25%, transparent 25%),
+                      linear-gradient(-135deg, #C9A227 25%, transparent 25%)
+                    `,
+                    backgroundSize: '20px 20px',
+                    backgroundPosition: '0 0, 10px 0, 10px -10px, 0px 10px'
+                  }}></div>
+                  {/* Additional geometric pattern */}
+                  <div className="absolute inset-0 opacity-20" style={{
+                    backgroundImage: `
+                      radial-gradient(circle at 50% 50%, #C9A227 1px, transparent 1px),
+                      radial-gradient(circle at 0% 0%, #C9A227 1px, transparent 1px),
+                      radial-gradient(circle at 100% 0%, #C9A227 1px, transparent 1px),
+                      radial-gradient(circle at 0% 100%, #C9A227 1px, transparent 1px),
+                      radial-gradient(circle at 100% 100%, #C9A227 1px, transparent 1px)
+                    `,
+                    backgroundSize: '40px 40px'
+                  }}></div>
+                </div>
+
+                {/* Portrait Image with background removal effect */}
+                <div className="relative aspect-[3/4] overflow-hidden">
                   <img
                     src={PRESIDENT_INFO.portraitImage}
                     alt={PRESIDENT_INFO.portraitAlt}
                     className="w-full h-full object-cover object-top grayscale"
+                    style={{ 
+                      mixBlendMode: 'normal',
+                      filter: 'contrast(1.1) brightness(1.05)'
+                    }}
                   />
+                  {/* Vignette effect to blend edges */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-30"></div>
+                  <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent opacity-30"></div>
                 </div>
 
-                {/* Subtle Border */}
-                <div className="absolute inset-0 border border-[#C9A227]/20 pointer-events-none"></div>
+                {/* Gold Border Frame */}
+                <div className="absolute inset-0 border-2 border-[#C9A227] pointer-events-none"></div>
+                
+                {/* Corner Accents */}
+                <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#C9A227]"></div>
+                <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#C9A227]"></div>
+                <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#C9A227]"></div>
+                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#C9A227]"></div>
               </div>
             </div>
           </div>
