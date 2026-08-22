@@ -3,30 +3,31 @@ import { CHAIRMAN_INFO } from '../data/groupData';
 import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 
 const CEO_VISION = {
-  opening: 'My vision for the High Quality Group is not simply to build businesses — it is to build institutions that endure. Businesses that create meaningful employment for our people, preserve the cultural heritage we are so proud of, and contribute to Bhutan\'s journey as a modern, self-reliant nation.',
+  saying: "Remember, it's not about where you start; it's about where you're headed and the impact you make along the way.",
+  opening: "My vision is simple: to build High Quality Group into one of Bhutan's most successful and influential business groups. I want every district in this Kingdom to know our name — not because we forced our way in, but because we delivered quality, created jobs, and built trust wherever we went.",
   pillars: [
     {
       number: '01',
-      title: 'Hospitality & Tourism',
-      description: 'Bhutan is one of the world\'s most extraordinary destinations. I envision the High Quality Group becoming the trusted name for travelers seeking authentic, luxurious, and meaningful experiences across our Kingdom — from boutique resorts in Paro and Punakha to curated cultural journeys in Bumthang.',
+      title: 'Expand Across All 20 Dzongkhags',
+      description: 'From Thimphu to Bumthang, from Paro to Samdrup Jongkhar — my goal is to have a High Quality presence in every district. Car rental, tourism, food, entertainment, trading — we will be everywhere Bhutan needs us.',
     },
     {
       number: '02',
-      title: 'Transportation at Scale',
-      description: 'With one of Bhutan\'s largest car rental fleets — 17+ SUVs, 7 Hi-Roof buses, and growing — we are building the transportation backbone that Bhutan\'s tourism and corporate sectors need. My goal is to make High Quality Car Rental the first name in reliable, premium ground transport nationwide.',
+      title: 'Build Bhutan\'s Largest Fleet',
+      description: 'We already operate 17+ SUVs and 7 Hi-Roof buses. But I am not satisfied. My target is 50+ vehicles — the largest, most trusted fleet in the country. When anyone in Bhutan needs transportation, they will call High Quality first.',
     },
     {
       number: '03',
-      title: 'Cultural Preservation',
-      description: 'Our Thangka painting gallery is more than a business — it is a commitment to preserving centuries of Bhutanese artistic tradition. I want every collector, every visitor, every institution that encounters our work to understand the depth and beauty of Himalayan sacred art.',
+      title: 'Become a Household Name',
+      description: 'Every Bhutanese family should know High Quality — whether for a wedding, a tour, a meal, or a night out. I want our brand to be synonymous with quality, reliability, and Bhutanese pride.',
     },
     {
       number: '04',
-      title: 'Diversified Legacy',
-      description: 'From food service to entertainment, from enterprise development to commercial trading — each company within the group is a building block. My long-term ambition is a diversified business group that can sustain itself across generations, creating value for Bhutan and its people.',
+      title: 'Generate Real Wealth',
+      description: 'Profit is not a dirty word. I want this group to generate significant wealth — for me, for my family, for my employees, and for Bhutan. Success breeds success, and wealth creates opportunity.',
     },
   ],
-  closing: 'I believe the strongest businesses are built on trust, quality, and relationships that last. That is the foundation of everything we do at the High Quality Group, and that is the legacy I am committed to building.',
+  closing: 'We started with nothing but ambition and hard work. Today we have 7 companies, 20+ years of operations, and a reputation that speaks for itself. But we are just getting started. The best is yet to come.',
 };
 
 export const PhilosophySection: React.FC = () => {
@@ -35,6 +36,18 @@ export const PhilosophySection: React.FC = () => {
       <BhutaneseTextileBackground variant="dark" opacity={0.12} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+
+        {/* CEO's Saying */}
+        <div className="mb-20 text-center max-w-3xl mx-auto">
+          <p className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl text-[#E8D4A2] leading-relaxed font-light italic">
+            &ldquo;{CEO_VISION.saying}&rdquo;
+          </p>
+          <div className="mt-6 flex items-center justify-center gap-3">
+            <span className="h-px w-8 bg-[#C5A059]/40" />
+            <p className="text-xs text-[#71717A] uppercase tracking-[0.2em]">{CHAIRMAN_INFO.name}</p>
+            <span className="h-px w-8 bg-[#C5A059]/40" />
+          </div>
+        </div>
 
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 mb-20">
@@ -48,14 +61,10 @@ export const PhilosophySection: React.FC = () => {
             </h2>
           </div>
 
-          <div className="lg:col-span-7 lg:pt-4 space-y-6">
-            <p className="text-lg sm:text-xl text-[#A1A1AA] leading-relaxed font-light font-serif-luxury italic">
-              &ldquo;{CEO_VISION.opening}&rdquo;
+          <div className="lg:col-span-7 lg:pt-4">
+            <p className="text-lg text-[#A1A1AA] leading-relaxed font-light">
+              {CEO_VISION.opening}
             </p>
-            <div className="flex items-center gap-3">
-              <div className="h-px w-8 bg-[#C5A059]/40" />
-              <p className="text-xs text-[#71717A] uppercase tracking-[0.2em]">{CHAIRMAN_INFO.name}, {CHAIRMAN_INFO.title}</p>
-            </div>
           </div>
         </div>
 
@@ -79,9 +88,9 @@ export const PhilosophySection: React.FC = () => {
 
         {/* Fleet Stats */}
         <div className="mt-16 pt-16 border-t border-[#27272a]">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-[#71717A] mb-8">Operations at a Glance</p>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-[#71717A] mb-8">Current Operations</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[{ label: 'Premium SUVs', value: '17+' }, { label: 'Hi-Roof Buses', value: '7' }, { label: 'Passenger Capacity', value: '8-9' }, { label: 'Districts Covered', value: '20' }].map((stat, idx) => (
+            {[{ label: 'Premium SUVs', value: '17+' }, { label: 'Hi-Roof Buses', value: '7' }, { label: 'Companies', value: '7+' }, { label: 'Districts', value: '20' }].map((stat, idx) => (
               <div key={idx}>
                 <p className="font-serif-luxury text-4xl sm:text-5xl text-[#E8D4A2] font-light">{stat.value}</p>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#71717A] mt-2">{stat.label}</p>
