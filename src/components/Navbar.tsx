@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           className="group focus:outline-none"
           aria-label="Pema's High Quality Group Home"
         >
-          <BrandMonogram />
+          <BrandMonogram size={48} />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">

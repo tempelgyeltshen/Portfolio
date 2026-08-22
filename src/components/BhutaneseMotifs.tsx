@@ -106,8 +106,8 @@ export const BrandMonogram: React.FC<{ className?: string; size?: number }> = ({
       style={{ width: size, height: size, objectFit: 'contain' }}
     />
     <div className="flex items-baseline">
-      <span className="text-[10px] tracking-[0.15em] font-normal text-gray-500 lowercase">pema's</span>
-      <span className="font-display-luxury text-lg sm:text-xl tracking-[0.18em] font-semibold text-[#E8D4A2] ml-1">HQG</span>
+      <span className="text-xs tracking-[0.15em] font-normal text-gray-500 lowercase">pema's</span>
+      <span className="font-display-luxury text-xl sm:text-2xl tracking-[0.18em] font-semibold text-[#E8D4A2] ml-1">HQG</span>
     </div>
   </div>
 );
