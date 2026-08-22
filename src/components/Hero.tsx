@@ -67,19 +67,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout })
             </div>
 
             <div className="pt-8 sm:pt-12 border-t border-[#27272a]/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
-              {CHAIRMAN_INFO.fullMessage.length > 0 && [
-                { label: 'Companies', value: '7+' },
-                { label: 'Years of Operation', value: '20+' },
-                { label: 'Industry Sectors', value: '5' },
-                { label: 'Districts Served', value: '20' },
-              ].map((stat, idx) => (
+              {[{ label: 'Companies', value: '7+' }, { label: 'Years', value: '20+' }, { label: 'Sectors', value: '5' }, { label: 'Districts', value: '20' }].map((stat, idx) => (
                 <div key={idx} className="space-y-1">
-                  <p className="font-serif-luxury text-2xl sm:text-3xl text-[#E8D4A2] font-semibold tracking-wide">
-                    {stat.value}
-                  </p>
-                  <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#71717A] leading-tight">
-                    {stat.label}
-                  </p>
+                  <p className="font-serif-luxury text-2xl sm:text-3xl text-[#E8D4A2] font-semibold tracking-wide">{stat.value}</p>
+                  <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#71717A] leading-tight">{stat.label}</p>
                 </div>
               ))}
             </div>

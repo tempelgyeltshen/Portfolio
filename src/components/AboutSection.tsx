@@ -1,6 +1,6 @@
 import React from 'react';
 import { CHAIRMAN_INFO } from '../data/groupData';
-import { BhutaneseTextileBackground, BhutaneseAuspiciousKnot, GoldSignature } from './BhutaneseMotifs';
+import { BhutaneseTextileBackground, GoldSignature } from './BhutaneseMotifs';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -28,10 +28,6 @@ export const AboutSection: React.FC = () => {
               <br />
               Grounded in Values.
             </h2>
-
-            <div className="pt-2">
-              <BhutaneseAuspiciousKnot className="text-[#8A7347]" size={42} />
-            </div>
 
             <div className="pt-4 border-t border-[#E4E4E7]/80 max-w-md">
               <p className="text-xs uppercase tracking-[0.16em] text-[#71717A] mb-2 font-medium">

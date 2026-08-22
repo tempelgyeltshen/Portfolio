@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 
 const EXPERIENCE_ITEMS = [
@@ -34,37 +34,23 @@ const EXPERIENCE_ITEMS = [
   },
 ];
 
-const CATEGORIES = ['All', 'Enterprise', 'Investment', 'Governance'] as const;
-
 export const ExperienceSection: React.FC = () => {
-  const [filter, setFilter] = useState<typeof CATEGORIES[number]>('All');
-  const filteredItems = filter === 'All' ? EXPERIENCE_ITEMS : EXPERIENCE_ITEMS.filter(item => item.category === filter);
-
   return (
     <section id="experience" className="relative bg-[#09090b] text-[#f4f4f5] py-24 sm:py-32 overflow-hidden">
       <BhutaneseTextileBackground variant="dark" opacity={0.05} />
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-          <div className="space-y-4 max-w-xl">
-            <div className="flex items-center gap-3">
-              <span className="text-xs uppercase tracking-[0.26em] font-semibold text-[#C5A059]">TRACK RECORD &amp; LEADERSHIP</span>
-              <span className="h-[1px] w-10 bg-[#C5A059]/60" />
-            </div>
-            <h2 id="experience-headline" className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F6] leading-[1.15]">
-              Milestones &amp;<br />Institutional Stewardship
-            </h2>
+        <div className="mb-16 space-y-4 max-w-xl">
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-[0.26em] font-semibold text-[#C5A059]">TRACK RECORD</span>
+            <span className="h-[1px] w-10 bg-[#C5A059]/60" />
           </div>
-          <div className="flex flex-wrap items-center gap-2">
-            {CATEGORIES.map(cat => (
-              <button key={cat} onClick={() => setFilter(cat)} className={`px-4 py-1.5 text-[11px] uppercase tracking-[0.18em] transition-colors border cursor-pointer ${filter === cat ? 'border-[#C5A059] bg-[#C5A059]/10 text-[#C5A059] font-medium' : 'border-[#27272a] text-[#A1A1AA] hover:text-[#FAF9F6] hover:border-[#3f3f46]'}`}>
-                {cat}
-              </button>
-            ))}
-          </div>
+          <h2 id="experience-headline" className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F6] leading-[1.15]">
+            Milestones &amp; Leadership
+          </h2>
         </div>
 
         <div className="space-y-6">
-          {filteredItems.map(item => (
+          {EXPERIENCE_ITEMS.map(item => (
             <div key={item.id} className="p-8 bg-[#121214]/90 border border-[#27272a] hover:border-[#C5A059]/50 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               <div className="lg:col-span-3 space-y-2">
                 <span className="font-serif-luxury text-xl sm:text-2xl font-medium text-[#E8D4A2]">{item.year}</span>

@@ -133,16 +133,9 @@ export const BrandMonogram: React.FC<{ className?: string; size?: number }> = ({
         />
       </svg>
     </div>
-    <div className="flex flex-col items-start">
-      <div className="flex items-baseline">
-        <span className="text-[10px] tracking-[0.15em] font-normal text-gray-500 lowercase">pema's</span>
-        <span className="font-display-luxury text-lg sm:text-xl tracking-[0.18em] font-semibold text-[#E8D4A2] ml-1">
-          HQG
-        </span>
-      </div>
-      <span className="text-[9px] tracking-[0.2em] font-semibold text-[#C5A059] uppercase -mt-0.5">
-        Entrepreneur. Investor. Builder.
-      </span>
+    <div className="flex items-baseline">
+      <span className="text-[10px] tracking-[0.15em] font-normal text-gray-500 lowercase">pema's</span>
+      <span className="font-display-luxury text-lg sm:text-xl tracking-[0.18em] font-semibold text-[#E8D4A2] ml-1">HQG</span>
     </div>
   </div>
 );

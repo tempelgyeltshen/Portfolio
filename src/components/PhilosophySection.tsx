@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BhutaneseTextileBackground, BhutaneseAuspiciousKnot } from './BhutaneseMotifs';
+import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 
 const PHILOSOPHY_PILLARS = [
   {
@@ -52,7 +52,7 @@ export const PhilosophySection: React.FC = () => {
             <h2 id="philosophy-headline" className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#18181B] leading-[1.15]">
               Long-Term Thinking.<br />Generational Impact.
             </h2>
-            <div className="pt-2"><BhutaneseAuspiciousKnot className="text-[#8A7347]" size={42} /></div>
+
           </div>
           <div className="lg:col-span-6 lg:pt-8 space-y-4">
             <p id="philosophy-lead-quote" className="font-serif-luxury text-xl sm:text-2xl text-[#27272A] font-normal leading-relaxed italic">
@@ -67,9 +67,8 @@ export const PhilosophySection: React.FC = () => {
             const isSelected = activePillar === pillar.id;
             return (
               <div key={pillar.id} onClick={() => setActivePillar(pillar.id)} className={`cursor-pointer transition-all duration-300 p-8 bg-white/80 border ${isSelected ? 'border-[#8A7347] shadow-md ring-1 ring-[#8A7347]/30' : 'border-[#E4E4E7] hover:border-[#8A7347]/50'}`}>
-                <div className="flex items-center justify-between mb-4">
+                <div className="mb-4">
                   <span className="font-serif-luxury text-2xl font-semibold text-[#8A7347]">{pillar.number}</span>
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Guiding Principle</span>
                 </div>
                 <h3 className="font-serif-luxury text-2xl font-medium text-[#18181B] mb-3">{pillar.title}</h3>
                 <p className="text-xs sm:text-sm text-[#71717A] italic mb-4 font-serif">&ldquo;{pillar.quote}&rdquo;</p>
