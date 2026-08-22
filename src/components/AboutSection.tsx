@@ -1,6 +1,6 @@
 import React from 'react';
 import { CHAIRMAN_INFO } from '../data/groupData';
-import { BhutaneseTextileBackground, GoldSignature } from './BhutaneseMotifs';
+import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -49,12 +49,11 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <div className="pt-4">
-              <GoldSignature />
-              <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#71717A] mt-1">
+              <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#71717A]">
                 {CHAIRMAN_INFO.name}
               </p>
               <p className="text-[11px] uppercase tracking-[0.14em] text-[#A1A1AA]">
-                {CHAIRMAN_INFO.title}
+                {CHAIRMAN_INFO.title} &bull; Former Painter
               </p>
             </div>
           </div>
