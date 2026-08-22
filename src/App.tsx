@@ -12,12 +12,6 @@ import { CompanyDetailPage } from './pages/CompanyDetailPage';
 
 function HomePage() {
   const [contactModalOpen, setContactModalOpen] = useState(false);
-  const [contactInitialTopic, setContactInitialTopic] = useState<string | undefined>(undefined);
-
-  const handleOpenContact = (topic?: string) => {
-    setContactInitialTopic(topic);
-    setContactModalOpen(true);
-  };
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -26,24 +20,20 @@ function HomePage() {
 
   return (
     <>
-      <Navbar onOpenContact={() => handleOpenContact()} />
+      <Navbar onOpenContact={() => setContactModalOpen(true)} />
 
       <main className="flex-grow">
-        <div id="hero"><Hero onExploreVentures={() => scrollTo('ventures')} onExploreAbout={() => scrollTo('about')} /></div>
-        <div id="about"><AboutSection /></div>
-        <div id="ventures"><VenturesSection /></div>
-        <div id="experience"><ExperienceSection /></div>
-        <div id="philosophy"><PhilosophySection /></div>
-        <div id="contact"><ContactSection onOpenContactModal={() => handleOpenContact()} /></div>
+        <Hero onExploreVentures={() => scrollTo('ventures')} onExploreAbout={() => scrollTo('about')} />
+        <AboutSection />
+        <VenturesSection />
+        <ExperienceSection />
+        <PhilosophySection />
+        <ContactSection onOpenContactModal={() => setContactModalOpen(true)} />
       </main>
 
       <FooterSimple />
 
-      <ContactModal
-        isOpen={contactModalOpen}
-        onClose={() => { setContactModalOpen(false); setContactInitialTopic(undefined); }}
-        initialTopic={contactInitialTopic}
-      />
+      <ContactModal isOpen={contactModalOpen} onClose={() => setContactModalOpen(false)} />
     </>
   );
 }
@@ -57,4 +47,4 @@ export default function App() {
       </Routes>
     </div>
   );
-}
+};
