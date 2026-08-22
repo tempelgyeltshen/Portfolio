@@ -1,89 +1,101 @@
 import React from 'react';
 import { CHAIRMAN_INFO } from '../data/groupData';
+import { BhutaneseTextileBackground, BhutaneseAuspiciousKnot, GoldSignature } from './BhutaneseMotifs';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="relative py-16 sm:py-24 bg-white">
-      {/* Subtle Bhutanese pattern */}
-      <div className="absolute inset-0 bhutan-pattern pointer-events-none"></div>
+    <section
+      id="about"
+      className="relative bg-[#FAF9F6] text-[#18181B] py-24 sm:py-32 overflow-hidden border-t border-b border-[#E4E4E7]"
+    >
+      <BhutaneseTextileBackground variant="light" opacity={0.045} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-black mb-4">
-              About
-            </h2>
-            <div className="flex items-center justify-center space-x-4">
-              <div className="h-px w-16 bg-[#C9A227]"></div>
-              <span className="text-xs uppercase tracking-[0.3em] text-[#C9A227] font-semibold">
-                Background & Vision
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="lg:col-span-6 space-y-6 sm:space-y-8">
+            <div className="flex items-center gap-3">
+              <span className="text-xs uppercase tracking-[0.26em] font-semibold text-[#8A7347]">
+                ABOUT
               </span>
-              <div className="h-px w-16 bg-[#C9A227]"></div>
+              <span className="h-[1px] w-10 bg-[#8A7347]/60" />
+            </div>
+
+            <h2
+              id="about-headline"
+              className="font-serif-luxury text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-tight text-[#18181B] leading-[1.15]"
+            >
+              Driven by Purpose.
+              <br />
+              Grounded in Values.
+            </h2>
+
+            <div className="pt-2">
+              <BhutaneseAuspiciousKnot className="text-[#8A7347]" size={42} />
+            </div>
+
+            <div className="pt-4 border-t border-[#E4E4E7]/80 max-w-md">
+              <p className="text-xs uppercase tracking-[0.16em] text-[#71717A] mb-2 font-medium">
+                Core Focus
+              </p>
+              <p className="text-sm text-[#52525B] leading-relaxed">
+                Tourism and transportation, traditional Bhutanese arts and craftsmanship, enterprise development, food and hospitality, commercial trading, and entertainment across the Kingdom.
+              </p>
             </div>
           </div>
 
-          {/* Content */}
-          <div className="space-y-12">
-            {/* Introduction */}
-            <div>
-              <p className="text-lg text-gray-800 leading-relaxed">
-                As the Chairman of High Quality Pvt. Ltd., I believe that sustainable business is about more than commercial success. It is about creating opportunities, developing people, building trusted relationships, and contributing meaningfully to Bhutan's economic development.
-              </p>
-            </div>
+          <div className="lg:col-span-6 space-y-8 lg:pt-8">
+            <p className="font-sans-luxury text-base sm:text-lg text-[#3F3F46] leading-relaxed font-light">
+              {CHAIRMAN_INFO.fullMessage[0]}
+            </p>
 
-            {/* Background */}
-            <div className="border-t border-b border-gray-200 py-8">
-              <h3 className="text-2xl font-serif font-bold text-black mb-4">
-                Background
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                Over the years, our business interests have grown into a diversified group serving different sectors, from tourism and transportation to traditional arts, enterprise services, food and hospitality, and entertainment. Each business within the High Quality Group has its own area of expertise, yet they are connected by a common philosophy.
-              </p>
-            </div>
+            <p className="font-sans-luxury text-base sm:text-lg text-[#3F3F46] leading-relaxed font-light">
+              {CHAIRMAN_INFO.fullMessage[1]}
+            </p>
 
-            {/* Values */}
-            <div>
-              <h3 className="text-2xl font-serif font-bold text-black mb-6">
-                Values
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="premium-card p-6">
-                  <h4 className="text-lg font-serif font-semibold text-black mb-2">Quality</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Setting high standards in product quality, service delivery, and professional operational execution.
-                  </p>
-                </div>
-                <div className="premium-card p-6">
-                  <h4 className="text-lg font-serif font-semibold text-black mb-2">Professionalism</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Operating with unwavering honesty, transparency, and ethical standards across all commercial transactions.
-                  </p>
-                </div>
-                <div className="premium-card p-6">
-                  <h4 className="text-lg font-serif font-semibold text-black mb-2">Integrity</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Building relationships based on truthfulness, keeping commitments, and honoring institutional trust.
-                  </p>
-                </div>
-                <div className="premium-card p-6">
-                  <h4 className="text-lg font-serif font-semibold text-black mb-2">Innovation</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Continuously refining operations, adopting appropriate technologies, and anticipating market evolution.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Vision */}
             <div className="pt-4">
-              <h3 className="text-2xl font-serif font-bold text-black mb-4">
-                Vision
-              </h3>
-              <p className="text-gray-800 leading-relaxed">
-                Our approach is centered on understanding our customers, responding to changing market needs, and building relationships that extend beyond individual transactions. We value long-term partnerships with clients, suppliers, employees, institutions, and business partners both within Bhutan and internationally. As a Bhutanese business group, we are also proud of the opportunity to showcase the country's culture, hospitality, creativity, and entrepreneurial spirit to the world.
+              <GoldSignature />
+              <p className="text-xs uppercase tracking-[0.2em] font-medium text-[#71717A] mt-1">
+                {CHAIRMAN_INFO.name}
+              </p>
+              <p className="text-[11px] uppercase tracking-[0.14em] text-[#A1A1AA]">
+                {CHAIRMAN_INFO.title}
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-20 pt-16 border-t border-[#E4E4E7] grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
+          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
+            <div className="flex items-center justify-between">
+              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">01</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Economic Core</span>
+            </div>
+            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">National Self-Reliance</h3>
+            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
+              Developing home-grown, value-additive enterprises that reduce import dependency, secure strategic supply chains, and retain capital within Bhutan.
+            </p>
+          </div>
+
+          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
+            <div className="flex items-center justify-between">
+              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">02</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Ethical Standard</span>
+            </div>
+            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Gross National Happiness in Enterprise</h3>
+            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
+              Demonstrating that commercial profitability and ecological balance are mutually reinforcing. Every portfolio company upholds community equity and sustainable practices.
+            </p>
+          </div>
+
+          <div className="space-y-3 p-6 bg-white/70 border border-[#E4E4E7] shadow-sm">
+            <div className="flex items-center justify-between">
+              <span className="font-serif-luxury text-xl font-semibold text-[#8A7347]">03</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">Global Gateway</span>
+            </div>
+            <h3 className="font-serif-luxury text-xl font-medium text-[#18181B]">Sovereign Global Integration</h3>
+            <p className="text-xs sm:text-sm text-[#52525B] leading-relaxed">
+              Bridging international capital, frontier technologies, and global luxury markets with the Kingdom and pristine terroir and ancient culture.
+            </p>
           </div>
         </div>
       </div>

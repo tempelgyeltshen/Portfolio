@@ -1,127 +1,115 @@
 import React from 'react';
-import { PRESIDENT_INFO } from '../data/groupData';
-import { ArrowRight } from 'lucide-react';
+import { PRESIDENT_INFO, CHAIRMAN_INFO } from '../data/groupData';
+import { ChevronRight } from 'lucide-react';
+import { BhutaneseTextileBackground, CornerAccents } from './BhutaneseMotifs';
 
 interface HeroProps {
   onExploreVentures: () => void;
+  onExploreAbout: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onExploreVentures }) => {
+export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout }) => {
   return (
-    <section id="hero" className="relative min-h-screen bg-white text-black flex items-center pt-24 sm:pt-28 pb-16 overflow-hidden">
-      {/* Background Subtle Bhutan Pattern */}
-      <div className="absolute inset-0 bhutan-pattern-subtle pointer-events-none"></div>
+    <section
+      id="hero"
+      className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] pt-32 pb-20 lg:pt-40 lg:pb-28 flex items-center overflow-hidden"
+    >
+      <BhutaneseTextileBackground variant="dark" opacity={0.06} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
+      <div
+        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#C5A059]/5 rounded-full blur-[140px] pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          {/* LEFT COLUMN: Editorial Heading & Overview */}
-          <div className="lg:col-span-7 space-y-8 text-left">
-            {/* Name */}
-            <div className="space-y-2">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-black leading-[1.1] tracking-tight">
-                Pema Tshering
-              </h1>
-              <div className="flex items-center space-x-4">
-                <div className="h-px w-16 bg-[#C9A227]"></div>
-                <p className="text-sm uppercase tracking-[0.3em] text-[#C9A227] font-semibold">
-                  Entrepreneur. Investor. Builder.
-                </p>
-              </div>
+          <div className="lg:col-span-7 space-y-8 lg:space-y-10">
+            <div className="flex items-center gap-3">
+              <span className="h-[1px] w-8 bg-[#C5A059]/70" />
+              <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.28em] text-[#C5A059]">
+                ENTREPRENEUR. INVESTOR. BUILDER.
+              </p>
             </div>
 
-            {/* Professional Statement */}
-            <p className="text-base sm:text-lg text-gray-800 max-w-2xl font-normal leading-relaxed font-light">
-              Building sustainable businesses across Bhutan's tourism, transportation, traditional arts, and commercial sectors. Creating opportunities that develop people, strengthen communities, and contribute meaningfully to economic growth.
+            <div className="space-y-1">
+              <p className="text-sm tracking-[0.15em] font-normal text-gray-400 lowercase">
+                pema's
+              </p>
+              <h1 className="font-serif-luxury text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.08] tracking-tight text-[#FAF9F6]">
+                High Quality Group
+                <br />
+                <span className="text-[#C5A059] font-medium italic">
+                  Pvt Ltd
+                </span>
+              </h1>
+            </div>
+
+            <p className="font-sans-luxury text-base sm:text-lg text-[#A1A1AA] max-w-xl leading-relaxed font-light">
+              Building sustainable businesses across Bhutan&apos;s tourism, transportation, traditional arts, and commercial sectors. Creating opportunities that develop people, strengthen communities, and contribute meaningfully to economic growth.
             </p>
 
-            {/* Stats/Quick Info */}
-            <div className="pt-6 flex flex-wrap gap-8">
-              <div>
-                <div className="text-3xl font-serif font-bold text-black">7+</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Companies</div>
-              </div>
-              <div>
-                <div className="text-3xl font-serif font-bold text-black">20+</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Years</div>
-              </div>
-              <div>
-                <div className="text-3xl font-serif font-bold text-black">5</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-gray-500">Sectors</div>
-              </div>
-            </div>
+            <div className="pt-2 flex flex-wrap items-center gap-4 sm:gap-6">
+              <button
+                onClick={onExploreAbout}
+                className="group relative inline-flex items-center justify-center gap-3 px-8 py-3.5 bg-transparent border border-[#C5A059] text-xs font-medium uppercase tracking-[0.2em] text-[#C5A059] hover:bg-[#C5A059] hover:text-[#09090b] transition-all duration-300 shadow-sm cursor-pointer"
+              >
+                <span>LEARN MORE</span>
+                <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+              </button>
 
-            {/* CTA Button */}
-            <div className="pt-4">
               <button
                 onClick={onExploreVentures}
-                className="btn-outline px-8 py-4 text-xs uppercase tracking-[0.2em] font-semibold flex items-center space-x-3 group"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-medium uppercase tracking-[0.2em] text-[#D4D4D8] hover:text-[#E8D4A2] transition-colors duration-200 cursor-pointer"
               >
-                <span>View Ventures</span>
-                <ArrowRight className="w-4 h-4 text-[#C9A227] group-hover:text-white transition-colors duration-300" />
+                <span>VIEW VENTURES</span>
+                <span className="text-[#C5A059] opacity-70 group-hover:opacity-100">&rarr;</span>
               </button>
+            </div>
+
+            <div className="pt-8 sm:pt-12 border-t border-[#27272a]/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
+              {CHAIRMAN_INFO.fullMessage.length > 0 && [
+                { label: 'Companies', value: '7+' },
+                { label: 'Years of Operation', value: '20+' },
+                { label: 'Industry Sectors', value: '5' },
+                { label: 'Districts Served', value: '20' },
+              ].map((stat, idx) => (
+                <div key={idx} className="space-y-1">
+                  <p className="font-serif-luxury text-2xl sm:text-3xl text-[#E8D4A2] font-semibold tracking-wide">
+                    {stat.value}
+                  </p>
+                  <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-[#71717A] leading-tight">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* RIGHT COLUMN: Portrait */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Main Portrait Container with Bhutanese Pattern Background */}
-              <div className="relative premium-card overflow-hidden">
-                {/* Bhutanese Pattern Background */}
-                <div className="absolute inset-0 bg-black">
-                  <div className="absolute inset-0 opacity-30" style={{
-                    backgroundImage: `
-                      linear-gradient(45deg, #C9A227 25%, transparent 25%),
-                      linear-gradient(-45deg, #C9A227 25%, transparent 25%),
-                      linear-gradient(135deg, #C9A227 25%, transparent 25%),
-                      linear-gradient(-135deg, #C9A227 25%, transparent 25%)
-                    `,
-                    backgroundSize: '20px 20px',
-                    backgroundPosition: '0 0, 10px 0, 10px -10px, 0px 10px'
-                  }}></div>
-                  {/* Additional geometric pattern */}
-                  <div className="absolute inset-0 opacity-20" style={{
-                    backgroundImage: `
-                      radial-gradient(circle at 50% 50%, #C9A227 1px, transparent 1px),
-                      radial-gradient(circle at 0% 0%, #C9A227 1px, transparent 1px),
-                      radial-gradient(circle at 100% 0%, #C9A227 1px, transparent 1px),
-                      radial-gradient(circle at 0% 100%, #C9A227 1px, transparent 1px),
-                      radial-gradient(circle at 100% 100%, #C9A227 1px, transparent 1px)
-                    `,
-                    backgroundSize: '40px 40px'
-                  }}></div>
-                </div>
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[420px]">
+              <div className="relative p-2.5 sm:p-3.5 border border-[#C5A059]/30 bg-[#121214]/60 shadow-2xl">
+                <CornerAccents />
 
-                {/* Portrait Image with background removal effect */}
-                <div className="relative aspect-[3/4] overflow-hidden">
+                <div className="relative aspect-[3/4] overflow-hidden bg-[#000000]">
                   <img
                     src={PRESIDENT_INFO.portraitImage}
                     alt={PRESIDENT_INFO.portraitAlt}
-                    className="w-full h-full object-cover object-top grayscale"
-                    style={{ 
-                      mixBlendMode: 'normal',
-                      filter: 'contrast(1.1) brightness(1.05)'
-                    }}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover object-top grayscale contrast-[1.08] brightness-[0.98] transition-transform duration-700 hover:scale-[1.02]"
                   />
-                  {/* Vignette effect to blend edges */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-30"></div>
-                  <div className="absolute inset-0 bg-gradient-to-l from-black via-transparent to-transparent opacity-30"></div>
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-[#09090b]/90 via-transparent to-transparent pointer-events-none"
+                    aria-hidden="true"
+                  />
                 </div>
 
-                {/* Gold Border Frame */}
-                <div className="absolute inset-0 border-2 border-[#C9A227] pointer-events-none"></div>
-                
-                {/* Corner Accents */}
-                <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#C9A227]"></div>
-                <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#C9A227]"></div>
-                <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#C9A227]"></div>
-                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#C9A227]"></div>
+                <div className="mt-3 flex items-center justify-between px-2 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]">
+                  <span className="text-[#C5A059] font-medium">{CHAIRMAN_INFO.name}</span>
+                  <span className="text-[#71717A]">THIMPHU &bull; BHUTAN</span>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

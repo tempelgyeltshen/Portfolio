@@ -4,7 +4,7 @@ import { ASSETS } from './assets';
 export const CHAIRMAN_INFO = {
   name: 'Mr. Pema Tshering',
   title: 'Chairman',
-  company: 'High Quality Pvt. Ltd.',
+  company: "Pema's High Quality Group Pvt Ltd",
   email: 'pemsbumthap@gmail.com',
   phone: '+975 17377777',
   website: 'www.bhutanlhtours.com',
@@ -13,7 +13,7 @@ export const CHAIRMAN_INFO = {
   portraitAlt: 'Mr. Pema Tshering, Chairman of High Quality Pvt. Ltd.',
   shortPhilosophy: 'Sustainable business is about creating opportunities, developing people, building trusted relationships, and contributing meaningfully to Bhutan\'s economic development.',
   fullMessage: [
-    'As the Chairman of High Quality Pvt. Ltd., I believe that sustainable business is about more than commercial success. It is about creating opportunities, developing people, building trusted relationships, and contributing meaningfully to Bhutan\'s economic development.',
+    'As the Chairman of Pema\'s High Quality Group Pvt Ltd, I believe that sustainable business is about more than commercial success. It is about creating opportunities, developing people, building trusted relationships, and contributing meaningfully to Bhutan\'s economic development.',
     'Over the years, our business interests have grown into a diversified group serving different sectors, from tourism and transportation to traditional arts, enterprise services, food and hospitality, and entertainment.',
     'Each business within the High Quality Group has its own area of expertise, yet they are connected by a common philosophy: quality, professionalism, integrity, innovation, and service excellence.',
     'Our approach is centered on understanding our customers, responding to changing market needs, and building relationships that extend beyond individual transactions. We value long-term partnerships with clients, suppliers, employees, institutions, and business partners both within Bhutan and internationally.',
@@ -32,7 +32,7 @@ export const CHAIRMAN_INFO = {
 export const PRESIDENT_INFO = {
   name: 'Mr. Pema Tshering',
   title: 'President & CEO',
-  company: 'High Quality Pvt. Ltd.',
+  company: "Pema's High Quality Group Pvt Ltd",
   portraitImage: ASSETS.ceo_pic,
   portraitAlt: 'Mr. Pema Tshering, President & CEO of High Quality Pvt. Ltd.',
   shortPhilosophy: "My role as President & CEO is to ensure every company within the High Quality Group creates real opportunities — developing people, building trusted partnerships, and contributing meaningfully to Bhutan's economic growth.",
@@ -90,16 +90,19 @@ export const GROUP_COMPANIES: CompanyItem[] = [
     id: 'car-rental',
     number: '02',
     name: 'High Quality Car Rental',
-    subtitle: 'Mobility You Can Depend On',
-    industry: 'Transportation & Chauffeur Services',
-    description: 'Delivers reliable, high-standard vehicular mobility supporting tourism, institutional clients, corporate delegations, and local travel requirements across Bhutan.',
-    fullStory: 'Navigating Bhutan\'s mountain highways requires dependable vehicles and experienced drivers. High Quality Car Rental offers well-maintained fleets and professional chauffeur services under the leadership of President Pema Tshering, ensuring seamless travel across the country.',
+    subtitle: 'One of Bhutan\'s Largest & Most Trusted Car Rental Fleets',
+    industry: 'Premium Transportation & Fleet Services',
+    description: 'One of the biggest and most established car rental companies in Bhutan, offering a large, diverse fleet of premium vehicles — from SUVs and executive sedans to multi-passenger Hi-Roof buses — for individual travelers, families, corporate groups, tour operators, and large-scale transportation requirements nationwide.',
+    fullStory: 'High Quality Car Rental is one of Bhutan\'s largest and most established vehicle rental providers. With a fleet of over 17+ SUVs — including premium Tank 500 and GWM models — and 7 Toyota Hi-Roof buses accommodating 8–9 passengers each, we have the capacity and capability to serve everything from individual travelers and families to corporate delegations, tour groups, and large parties requiring nationwide transportation.\n\nOur fleet is professionally maintained to the highest standards, driven by experienced chauffeurs who know Bhutan\'s mountain highways intimately. Whether you need airport transfers at Paro, executive travel across districts, multi-day tour logistics, or large-group transportation, High Quality Car Rental delivers reliability, comfort, and premium service at scale.\n\nAs part of Pema\'s High Quality Group Pvt Ltd, we bring the same commitment to excellence, safety, and customer satisfaction that has made us a trusted name in Bhutanese transportation. We are not a small local rental service — we are a major vehicle rental provider equipped to handle the most demanding transportation requirements across the Kingdom.',
     highlights: [
+      '17+ Premium SUVs Including Tank 500 & GWM Models',
+      '7 Toyota Hi-Roof Buses — 8 to 9 Passengers Each',
       'Chauffeur-Driven Executive & Visitor Travel',
-      'Airport Transfers (Paro Airport to All Districts)',
-      'Corporate & Delegation Transportation',
-      'Customized Long-Distance Travel Logistics',
-      'Headquartered in Thimphu, Servicing Nationwide'
+      'Airport Transfers — Paro Airport to All Districts',
+      'Corporate & Delegation Transportation at Scale',
+      'Customized Multi-Day Tour & Long-Distance Logistics',
+      'Large Group & Event Transportation Solutions',
+      'Headquartered in Thimphu, Servicing All 20 Dzongkhags'
     ],
     image: ASSETS.carental1,
     gallery: [
