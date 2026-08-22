@@ -247,10 +247,16 @@ export const CompanyDetailPage: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#050507] py-10 border-t border-[#27272a]/50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 text-center">
-          <BrandMonogram size={48} className="justify-center mb-4" />
-          <p className="text-[10px] uppercase tracking-[0.2em] text-[#52525B]">&copy; {new Date().getFullYear()} All Rights Reserved. Thimphu, Bhutan</p>
+      <footer className="relative bg-[#050507] text-[#71717A] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <BrandMonogram size={48} />
+            <div className="flex items-center gap-6">
+              <Link to="/" className="text-xs text-[#71717A] hover:text-[#C5A059] transition-colors">Home</Link>
+              <span className="text-[#27272a]">|</span>
+              <span className="text-[10px] uppercase tracking-[0.15em] text-[#3f3f46]">&copy; {new Date().getFullYear()} Pema&apos;s High Quality Group Pvt Ltd</span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
