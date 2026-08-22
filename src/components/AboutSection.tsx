@@ -5,7 +5,7 @@ import { BhutaneseTextileBackground } from './BhutaneseMotifs';
 export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="relative bg-[#FAF9F6] text-[#18181B] py-28 sm:py-36 overflow-hidden">
-      <BhutaneseTextileBackground variant="light" opacity={0.05} />
+      <BhutaneseTextileBackground variant="light" opacity={0.10} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">

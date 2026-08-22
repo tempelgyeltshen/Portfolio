@@ -96,7 +96,7 @@ export const ContactModal: React.FC<{
 export const ContactSection: React.FC<{ onOpenContactModal: () => void }> = ({ onOpenContactModal }) => {
   return (
     <section id="contact" className="relative bg-[#09090b] text-[#f4f4f5] py-28 sm:py-36 overflow-hidden border-t border-[#27272a]">
-      <BhutaneseTextileBackground variant="dark" opacity={0.05} />
+      <BhutaneseTextileBackground variant="dark" opacity={0.10} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">

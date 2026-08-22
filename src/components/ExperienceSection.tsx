@@ -31,7 +31,7 @@ const EXPERIENCE_ITEMS = [
 export const ExperienceSection: React.FC = () => {
   return (
     <section id="experience" className="relative bg-[#FAF9F6] text-[#18181B] py-28 sm:py-36 overflow-hidden">
-      <BhutaneseTextileBackground variant="light" opacity={0.04} />
+      <BhutaneseTextileBackground variant="light" opacity={0.08} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="mb-20 space-y-4">

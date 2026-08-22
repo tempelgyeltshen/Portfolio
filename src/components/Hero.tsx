@@ -10,7 +10,7 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onExploreVentures, onExploreAbout }) => {
   return (
     <section id="hero" className="relative min-h-screen bg-[#09090b] text-[#f4f4f5] flex items-center overflow-hidden">
-      <BhutaneseTextileBackground variant="dark" opacity={0.06} />
+      <BhutaneseTextileBackground variant="dark" opacity={0.12} />
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">

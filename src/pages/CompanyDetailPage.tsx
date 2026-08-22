@@ -75,7 +75,7 @@ export const CompanyDetailPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-[#A1A1AA] hover:text-[#C5A059] transition-colors">
             <ArrowLeft className="w-4 h-4" />
-            <BrandMonogram size={32} />
+            <BrandMonogram size={44} />
           </Link>
           <span className="text-[10px] font-mono tracking-widest text-[#52525B]">{company.number}</span>
         </div>
@@ -249,7 +249,7 @@ export const CompanyDetailPage: React.FC = () => {
       {/* Footer */}
       <footer className="bg-[#050507] py-10 border-t border-[#27272a]/50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 text-center">
-          <BrandMonogram size={36} className="justify-center mb-4" />
+          <BrandMonogram size={48} className="justify-center mb-4" />
           <p className="text-[10px] uppercase tracking-[0.2em] text-[#52525B]">&copy; {new Date().getFullYear()} All Rights Reserved. Thimphu, Bhutan</p>
         </div>
       </footer>
