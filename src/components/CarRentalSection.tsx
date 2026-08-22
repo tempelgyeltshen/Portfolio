@@ -47,7 +47,7 @@ export const CarRentalSection: React.FC<CarRentalSectionProps> = ({ onInquire })
           <div className="lg:col-span-6 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#8B6914]/10 border border-[#8B6914]/30 text-xs uppercase tracking-[0.2em] text-[#8B6914] font-semibold transition-all duration-300 hover:bg-[#8B6914]/20">
               <Car className="w-3.5 h-3.5" />
-              <span>04 — TRANSPORTATION & MOBILITY</span>
+              <span>02 — TRANSPORTATION & MOBILITY</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-sm">

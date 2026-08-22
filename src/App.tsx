@@ -1,136 +1,66 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { ChairmanSection } from './components/ChairmanSection';
-import { GroupIntro } from './components/GroupIntro';
-import { GroupCompanies } from './components/GroupCompanies';
-import { ThangkaSection } from './components/ThangkaSection';
-import { CarRentalSection } from './components/CarRentalSection';
-import { TravelersSection } from './components/TravelersSection';
-import { EnterpriseSection } from './components/EnterpriseSection';
-import { Food247Section } from './components/Food247Section';
-import { HitokaraSection } from './components/HitokaraSection';
-import { TradingSection } from './components/TradingSection';
-import { CollectiveStrength } from './components/CollectiveStrength';
-import { BhutanPresence } from './components/BhutanPresence';
-import { WhyUs } from './components/WhyUs';
-import { VisionValues } from './components/VisionValues';
-import { ChairmanClosing } from './components/ChairmanClosing';
+import { AboutSection } from './components/AboutSection';
+import { VenturesSection } from './components/VenturesSection';
+import { ExperienceSection } from './components/ExperienceSection';
+import { PhilosophySection } from './components/PhilosophySection';
 import { ContactSection } from './components/ContactSection';
-import { Footer } from './components/Footer';
-
+import { FooterSimple } from './components/FooterSimple';
 import { CompanyModal } from './components/CompanyModal';
-import { ThangkaModal } from './components/ThangkaModal';
-import { SearchModal } from './components/SearchModal';
 
-import { CompanyItem, ThangkaArtItem } from './types';
+import { CompanyItem } from './types';
 
 export default function App() {
   const [selectedCompany, setSelectedCompany] = useState<CompanyItem | null>(null);
-  const [selectedThangka, setSelectedThangka] = useState<ThangkaArtItem | null>(null);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [contactSubject, setContactSubject] = useState<string>('Partnership');
 
-  const handleExploreGroup = () => {
-    const el = document.querySelector('#businesses');
+  const handleExploreVentures = () => {
+    const el = document.querySelector('#ventures');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleChairmanMessage = () => {
-    const el = document.querySelector('#chairman');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleOpenContactWithSubject = (subject: string) => {
-    setContactSubject(subject);
+  const handleOpenContact = () => {
     const el = document.querySelector('#contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-screen gradient-hero text-[#2C2D31] font-sans antialiased selection:bg-[#C9A227] selection:text-white">
+    <div className="min-h-screen bg-white text-black font-sans antialiased selection:bg-[#C9A227] selection:text-white">
       {/* Fixed Sticky Header Navigation */}
-      <Navbar
-        onOpenSearch={() => setIsSearchOpen(true)}
-        onOpenContact={() => handleOpenContactWithSubject('Partnership')}
-      />
+      <Navbar onOpenContact={handleOpenContact} />
 
       {/* Main Content Flow */}
       <main>
-        {/* 1. Homepage Hero */}
-        <Hero
-          onExploreGroup={handleExploreGroup}
-          onChairmanMessage={handleChairmanMessage}
-        />
+        {/* Hero Section */}
+        <Hero onExploreVentures={handleExploreVentures} />
 
-        {/* 2. Chairman Section & Leadership Philosophy */}
-        <ChairmanSection />
+        {/* About Section */}
+        <AboutSection />
 
-        {/* 3. Group Introduction */}
-        <GroupIntro />
+        {/* Ventures Section */}
+        <VenturesSection onSelectCompany={(comp) => setSelectedCompany(comp)} />
 
-        {/* 4. Long-term Vision & Corporate Values */}
-        <VisionValues />
+        {/* Experience Section */}
+        <ExperienceSection />
 
-        {/* 5. Group Companies Editorial Showcase (01 - 07) */}
-        <GroupCompanies onSelectCompany={(comp) => setSelectedCompany(comp)} />
+        {/* Philosophy Section */}
+        <PhilosophySection />
 
-        {/* 6. High Quality Thangka Painting Cultural Showcase (01) */}
-        <ThangkaSection onSelectArtwork={(art) => setSelectedThangka(art)} />
-
-        {/* 7. High Quality Car Rental Section (02) */}
-        <CarRentalSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 8. High Quality Travelers Deep Dive (03) */}
-        <TravelersSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 9. High Quality Enterprise Section (04) */}
-        <EnterpriseSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 10. High Quality 24/7 Food & Service Section (05) */}
-        <Food247Section />
-
-        {/* 11. Hitokara Entertainment Section (06) */}
-        <HitokaraSection />
-
-        {/* 12. High Quality Trading Commercial Section (07) */}
-        <TradingSection onInquire={handleOpenContactWithSubject} />
-
-        {/* 13. Collective Strength Summary */}
-        <CollectiveStrength onSelectCompany={(comp) => setSelectedCompany(comp)} />
-
-        {/* 14. Bhutan Presence & Interactive 20 Dzongkhags Explorer */}
-        <BhutanPresence />
-
-        {/* 15. Why Work With Us */}
-        <WhyUs />
-
-        {/* 16. Chairman's Closing Address */}
-        <ChairmanClosing />
-
-        {/* 17. Executive Contact Form & Details */}
-        <ContactSection initialSubject={contactSubject} />
+        {/* Contact Section */}
+        <ContactSection />
       </main>
 
       {/* Footer */}
-      <Footer />
+      <FooterSimple />
 
-      {/* Interactive Modals */}
+      {/* Company Modal */}
       <CompanyModal
         company={selectedCompany}
         onClose={() => setSelectedCompany(null)}
-        onInquire={handleOpenContactWithSubject}
-      />
-
-      <ThangkaModal
-        artwork={selectedThangka}
-        onClose={() => setSelectedThangka(null)}
-      />
-
-      <SearchModal
-        isOpen={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        onSelectCompany={(comp) => setSelectedCompany(comp)}
+        onInquire={() => {
+          setSelectedCompany(null);
+          handleOpenContact();
+        }}
       />
     </div>
   );

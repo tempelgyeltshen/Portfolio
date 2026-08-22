@@ -1,258 +1,111 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CHAIRMAN_INFO } from '../data/groupData';
-import { Mail, Phone, Globe, Send, CheckCircle2, Building2 } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
-interface ContactSectionProps {
-  initialSubject?: string;
-}
-
-export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject = '' }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    organization: '',
-    inquiryType: initialSubject || 'Partnership',
-    message: ''
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    const mailtoSubject = encodeURIComponent(`[High Quality Group Inquiry] ${formData.inquiryType} - ${formData.name}`);
-    const mailtoBody = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nOrganization: ${formData.organization}\nCategory: ${formData.inquiryType}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:pemsbumthap@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
-  };
-
+export const ContactSection: React.FC = () => {
   return (
-    <section id="contact" className="py-24 bg-[#e9edc9] text-[#2C2D31] relative border-t border-gray-200 animate-fade-in">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#8B6914]">
-            EXECUTIVE ENGAGEMENT
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-sm">
-            LET'S BUILD SOMETHING MEANINGFUL
+    <section id="contact" className="relative py-16 sm:py-24 bg-white">
+      {/* Subtle Bhutanese pattern */}
+      <div className="absolute inset-0 bhutan-pattern pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-serif font-bold text-black mb-4">
+            Contact
           </h2>
-          <p className="text-sm text-[#4A4843] font-normal leading-relaxed max-w-2xl mx-auto pt-1">
-            Connect directly with the Chairman's Office and the leadership of High Quality Pvt. Ltd.
-          </p>
+          <div className="flex items-center justify-center space-x-4">
+            <div className="h-px w-16 bg-[#C9A227]"></div>
+            <span className="text-xs uppercase tracking-[0.3em] text-[#C9A227] font-semibold">
+              Get in Touch
+            </span>
+            <div className="h-px w-16 bg-[#C9A227]"></div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          {/* LEFT: Official Contact Details */}
-          <div className="lg:col-span-5 space-y-8">
-            <div className="p-8 bg-[#faedcd] border border-[#8B6914]/30 rounded-sm space-y-6 shadow-md">
-              <div>
-                <span className="text-xs uppercase tracking-widest text-[#8B6914] font-semibold block mb-1">
-                  OFFICE OF THE CHAIRMAN
-                </span>
-                <h3 className="text-2xl font-serif font-bold text-[#2C2D31] text-shadow-sm">
-                  {CHAIRMAN_INFO.name}
-                </h3>
-                <p className="text-xs uppercase tracking-wider text-[#4A4843] font-medium">
-                  Chairman | {CHAIRMAN_INFO.company}
-                </p>
-              </div>
-
-              <div className="space-y-4 pt-4 border-t border-gray-200 text-sm">
-                <a
-                  href={`mailto:${CHAIRMAN_INFO.email}`}
-                  className="flex items-center space-x-3.5 text-[#2C2D31] hover:text-[#8B6914] transition-colors duration-300 group"
-                >
-                  <div className="w-10 h-10 rounded bg-[#8B6914]/10 border border-[#8B6914]/30 flex items-center justify-center shrink-0 text-[#8B6914]">
-                    <Mail className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-[10px] uppercase tracking-wider text-[#8E8B85] font-semibold block">Email Address</span>
-                    <span className="font-mono text-xs font-medium">{CHAIRMAN_INFO.email}</span>
-                  </div>
-                </a>
-
-                <a
-                  href={`tel:${CHAIRMAN_INFO.phone}`}
-                  className="flex items-center space-x-3.5 text-[#2C2D31] hover:text-[#8B6914] transition-colors duration-300 group"
-                >
-                  <div className="w-10 h-10 rounded bg-[#8B6914]/10 border border-[#8B6914]/30 flex items-center justify-center shrink-0 text-[#8B6914]">
-                    <Phone className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-[10px] uppercase tracking-wider text-[#8E8B85] font-semibold block">Mobile / WhatsApp</span>
-                    <span className="font-mono text-xs font-medium">{CHAIRMAN_INFO.phone}</span>
-                  </div>
-                </a>
-
-                <a
-                  href={CHAIRMAN_INFO.webUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3.5 text-[#2C2D31] hover:text-[#8B6914] transition-colors duration-300 group"
-                >
-                  <div className="w-10 h-10 rounded bg-[#8B6914]/10 border border-[#8B6914]/30 flex items-center justify-center shrink-0 text-[#8B6914]">
-                    <Globe className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-[10px] uppercase tracking-wider text-[#8E8B85] font-semibold block">Official Tourism Website</span>
-                    <span className="font-mono text-xs font-medium">{CHAIRMAN_INFO.website}</span>
-                  </div>
-                </a>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200 space-y-2">
-                <span className="text-xs font-semibold text-[#8B6914] uppercase tracking-wider block">
-                  Enterprise Headquarters:
-                </span>
-                <p className="text-xs text-[#4A4843] font-normal leading-relaxed">
-                  High Quality Pvt. Ltd.<br />
-                  Thimphu, Kingdom of Bhutan
-                </p>
-              </div>
+        {/* Contact Information */}
+        <div className="max-w-3xl mx-auto">
+          <div className="premium-card p-12">
+            {/* Name & Title */}
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-serif font-bold text-black mb-2">
+                {CHAIRMAN_INFO.name}
+              </h3>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#C9A227] font-semibold">
+                Chairman | High Quality Pvt. Ltd.
+              </p>
             </div>
-          </div>
 
-          {/* RIGHT: Corporate Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#faedcd] border border-[#8B6914]/30 rounded-sm p-8 sm:p-10 shadow-md">
-            {submitted ? (
-              <div className="text-center py-12 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#8B6914]/20 border border-[#8B6914] flex items-center justify-center mx-auto text-[#8B6914]">
-                  <CheckCircle2 className="w-8 h-8" />
+            {/* Contact Details */}
+            <div className="space-y-8">
+              {/* Email */}
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-[#C9A227] flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-[#C9A227]" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#2C2D31]">
-                  Inquiry Received
-                </h3>
-                <p className="text-xs sm:text-sm text-[#4A4843] max-w-md mx-auto font-normal leading-relaxed">
-                  Thank you for connecting with High Quality Pvt. Ltd. Your communication has been dispatched directly to <strong className="text-[#2C2D31]">pemsbumthap@gmail.com</strong> and the Chairman's Office.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 text-xs uppercase tracking-widest font-semibold text-white bg-[#1C1D21] hover:bg-[#8B6914] transition-colors duration-300 rounded-sm mt-4 shadow-md"
-                >
-                  Send Another Inquiry
-                </button>
+                <div>
+                  <span className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold block mb-1">
+                    Email
+                  </span>
+                  <a
+                    href={`mailto:${CHAIRMAN_INFO.email}`}
+                    className="text-lg text-black hover:text-[#C9A227] transition-colors duration-300"
+                  >
+                    {CHAIRMAN_INFO.email}
+                  </a>
+                </div>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="border-b border-gray-200 pb-4 mb-2">
-                  <h3 className="text-xl font-serif font-bold text-[#2C2D31] flex items-center space-x-2">
-                    <Building2 className="w-5 h-5 text-[#8B6914]" />
-                    <span>Corporate Inquiry Form</span>
-                  </h3>
-                  <p className="text-xs text-[#4A4843] mt-1 font-normal">
-                    Please provide details regarding your proposal, partnership, or service request.
+
+              {/* Phone */}
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-[#C9A227] flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-[#C9A227]" />
+                </div>
+                <div>
+                  <span className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold block mb-1">
+                    Phone / WhatsApp
+                  </span>
+                  <a
+                    href={`tel:${CHAIRMAN_INFO.phone}`}
+                    className="text-lg text-black hover:text-[#C9A227] transition-colors duration-300"
+                  >
+                    {CHAIRMAN_INFO.phone}
+                  </a>
+                </div>
+              </div>
+
+              {/* Location */}
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 border border-[#C9A227] flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-[#C9A227]" />
+                </div>
+                <div>
+                  <span className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold block mb-1">
+                    Location
+                  </span>
+                  <p className="text-lg text-black">
+                    Thimphu, Kingdom of Bhutan
                   </p>
                 </div>
+              </div>
+            </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8B6914] mb-1.5">
-                      Your Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="e.g. Tashi Dorji"
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] placeholder-gray-400 focus:outline-none focus:border-[#8B6914]"
-                    />
-                  </div>
+            {/* Divider */}
+            <div className="my-12 border-t border-gray-200"></div>
 
-                  <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8B6914] mb-1.5">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="e.g. name@company.com"
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] placeholder-gray-400 focus:outline-none focus:border-[#8B6914]"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8B6914] mb-1.5">
-                      Phone / WhatsApp Number
-                    </label>
-                    <input
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+975..."
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] placeholder-gray-400 focus:outline-none focus:border-[#8B6914]"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8B6914] mb-1.5">
-                      Organization / Company
-                    </label>
-                    <input
-                      type="text"
-                      value={formData.organization}
-                      onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                      placeholder="e.g. Global Travel Inc."
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] placeholder-gray-400 focus:outline-none focus:border-[#8B6914]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
-                    Inquiry Category
-                  </label>
-                  <select
-                    value={formData.inquiryType}
-                    onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] focus:outline-none focus:border-[#8B6914]"
-                  >
-                    <option value="Partnership">Commercial Partnership</option>
-                    <option value="Tourism">High Quality Travelers (Tourism)</option>
-                    <option value="Thangka">High Quality Thangka Art & Crafts</option>
-                    <option value="Trading">Commercial Sourcing & Trading</option>
-                    <option value="CarRental">Car Rental & Transportation</option>
-                    <option value="Enterprise">Enterprise Ventures</option>
-                    <option value="Hitokara">Hitokara Lounge</option>
-                    <option value="General">General Chairman's Office Query</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-[11px] uppercase tracking-wider font-semibold text-[#8A6B29] mb-1.5">
-                    Message / Proposal *
-                  </label>
-                  <textarea
-                    required
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Describe your inquiry or proposal..."
-                    className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-sm text-xs text-[#2C2D31] placeholder-gray-400 focus:outline-none focus:border-[#B08B46]"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3.5 text-xs uppercase tracking-[0.2em] font-bold text-white bg-[#1C1D21] hover:bg-[#8B6914] transition-colors duration-300 rounded-sm flex items-center justify-center space-x-2 shadow-md"
-                >
-                  <Send className="w-4 h-4 text-[#d4a373]" />
-                  <span>Transmit Inquiry to Chairman's Office</span>
-                </button>
-              </form>
-            )}
+            {/* Website */}
+            <div className="text-center">
+              <a
+                href={CHAIRMAN_INFO.webUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-600 hover:text-[#C9A227] transition-colors duration-300 uppercase tracking-[0.1em]"
+              >
+                {CHAIRMAN_INFO.website}
+              </a>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

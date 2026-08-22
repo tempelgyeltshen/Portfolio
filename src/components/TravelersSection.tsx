@@ -27,7 +27,7 @@ export const TravelersSection: React.FC<TravelersSectionProps> = ({ onInquire })
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-[#8B6914]/10 border border-[#8B6914]/30 text-xs uppercase tracking-[0.25em] text-[#8B6914] font-semibold">
             <Compass className="w-3.5 h-3.5" />
-            <span>01 — TOURISM & DESTINATION MANAGEMENT</span>
+            <span>03 — TOURISM & DESTINATION MANAGEMENT</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-sm">
             High Quality Travelers
@@ -36,7 +36,7 @@ export const TravelersSection: React.FC<TravelersSectionProps> = ({ onInquire })
             Discover Bhutan. Experience It Personally.
           </p>
           <p className="text-sm text-[#4A4843] font-normal leading-relaxed max-w-2xl mx-auto pt-2">
-            Catters to travelers seeking more than a conventional holiday, presenting Bhutan as a sanctuary where culture, pristine nature, spirituality, and responsible luxury come together seamlessly.
+            Caters to travelers seeking more than a conventional holiday, presenting Bhutan as a sanctuary where culture, pristine nature, spirituality, and responsible luxury come together seamlessly.
           </p>
         </div>
 

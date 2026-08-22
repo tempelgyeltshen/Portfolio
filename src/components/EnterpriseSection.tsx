@@ -39,7 +39,7 @@ export const EnterpriseSection: React.FC<EnterpriseSectionProps> = ({ onInquire 
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-sm bg-[#8B6914]/10 border border-[#8B6914]/30 text-xs uppercase tracking-[0.2em] text-[#8B6914] font-semibold">
               <Building2 className="w-3.5 h-3.5" />
-              <span>06 — COMMERCIAL ENTERPRISE</span>
+              <span>04 — COMMERCIAL ENTERPRISE</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#2C2D31] tracking-tight text-shadow-sm">
